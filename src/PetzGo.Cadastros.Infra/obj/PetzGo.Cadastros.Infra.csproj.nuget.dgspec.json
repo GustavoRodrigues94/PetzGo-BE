@@ -1,0 +1,198 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj": {}
+  },
+  "projects": {
+    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj",
+        "projectName": "PetzGo.Cadastros.Dominio",
+        "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
+                "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj",
+        "projectName": "PetzGo.Cadastros.Infra",
+        "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj",
+        "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj": {
+                "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
+        "projectName": "PetzGo.Core",
+        "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
+        "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

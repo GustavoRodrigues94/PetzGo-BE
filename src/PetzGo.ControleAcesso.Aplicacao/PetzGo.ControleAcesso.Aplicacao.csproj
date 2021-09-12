@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PetzGo.ControleAcesso.Dominio\PetzGo.ControleAcesso.Dominio.csproj" />
+    <ProjectReference Include="..\PetzGo.Core\PetzGo.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MediatR">
+      <HintPath>..\..\..\..\..\Users\Gustavo\.nuget\packages\mediatr\9.0.0\lib\netstandard2.1\MediatR.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

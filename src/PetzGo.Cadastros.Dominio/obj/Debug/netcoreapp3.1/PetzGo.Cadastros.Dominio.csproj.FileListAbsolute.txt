@@ -1,0 +1,14 @@
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.deps.json
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.dll
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.pdb
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\bin\Debug\netcoreapp3.1\PetzGo.Core.dll
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\bin\Debug\netcoreapp3.1\PetzGo.Core.pdb
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\bin\Debug\netcoreapp3.1\MediatR.xml
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.csprojAssemblyReference.cache
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.AssemblyInfoInputs.cache
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.AssemblyInfo.cs
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.csproj.CoreCompileInputs.cache
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.csproj.CopyComplete
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.dll
+C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Dominio\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.pdb

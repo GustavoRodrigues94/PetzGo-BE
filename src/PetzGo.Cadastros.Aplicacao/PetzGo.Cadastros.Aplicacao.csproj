@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.5" />
+    <PackageReference Include="Flunt.Br" Version="1.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PetzGo.Cadastros.Dominio\PetzGo.Cadastros.Dominio.csproj" />
+    <ProjectReference Include="..\PetzGo.ControleAcesso.Dominio\PetzGo.ControleAcesso.Dominio.csproj" />
+    <ProjectReference Include="..\PetzGo.Core\PetzGo.Core.csproj" />
+  </ItemGroup>
+
+</Project>
