@@ -10,11 +10,15 @@ namespace PetzGo.Cadastros.Dominio.Entidades
         {
             TipoPetCaracteristica = tipoPetCaracteristica;
             _servicoPetCaracteristicas = new List<ServicoPetCaracteristica>();
+            _pets = new List<Pet>();
         }
 
         public TipoPetCaracteristica TipoPetCaracteristica { get; private set; }
 
         private readonly List<ServicoPetCaracteristica> _servicoPetCaracteristicas;
         public IEnumerable<ServicoPetCaracteristica> ServicoPetCaracteristica => _servicoPetCaracteristicas;
+
+        private readonly List<Pet> _pets;
+        public IEnumerable<Pet> Pets => _pets;
     }
 }
