@@ -22,6 +22,7 @@ namespace PetzGo.Cadastros.Infra.Contexto
         public DbSet<ServicoPetCaracteristica> ServicoPetCaracteristicas { get; set; }
         public DbSet<DiaSemana> DiasSemana { get; set; }
         public DbSet<PetCaracteristica> PetCaracteristicas { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
