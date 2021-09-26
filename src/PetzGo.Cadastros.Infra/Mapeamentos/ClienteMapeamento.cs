@@ -12,6 +12,7 @@ namespace PetzGo.Cadastros.Infra.Mapeamentos
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Nome).HasColumnType("varchar(70)").IsRequired();
             builder.Property(x => x.WhatsApp).HasColumnType("varchar(15)").IsRequired();
+            builder.Property(x => x.Ativo).IsRequired();
             builder.HasOne(c => c.Endereco).WithOne(en => en.Cliente).HasForeignKey<Cliente>(e => e.EnderecoId);
             builder.HasOne(c => c.Pet).WithOne(p => p.Cliente).HasForeignKey<Pet>(p => p.ClienteId);
         }

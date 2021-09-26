@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas;
 using PetzGo.Cadastros.Aplicacao.Consultas.EmpresaConsultas;
 using PetzGo.Cadastros.Aplicacao.Manipuladores;
 using PetzGo.Cadastros.Dominio.Repositorios;
@@ -64,6 +65,7 @@ namespace PetzGo.API.Middlewares
 
             services.AddScoped<ClienteComandoManipulador, ClienteComandoManipulador>();
             services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
+            services.AddScoped<IClienteConsultas, ClienteConsultas>();
 
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddScoped<ControleAcessoComandoManipulador, ControleAcessoComandoManipulador>();

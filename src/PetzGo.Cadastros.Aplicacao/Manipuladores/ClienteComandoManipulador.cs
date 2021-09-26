@@ -9,7 +9,8 @@ using PetzGo.Core.Utilitarios.MensagensPadrao;
 namespace PetzGo.Cadastros.Aplicacao.Manipuladores
 {
     public class ClienteComandoManipulador : Notifiable,
-        IComandoManipulador<AdicionarClienteComando>
+        IComandoManipulador<AdicionarClienteComando>,
+        IComandoManipulador<DesativarAtivarClienteComando>
     {
         private readonly IClienteRepositorio _clienteRepositorio;
 
@@ -36,6 +37,26 @@ namespace PetzGo.Cadastros.Aplicacao.Manipuladores
             return commitou
                 ? new ComandoResultado(true, "Sucesso ao adicionar cliente", cliente)
                 : new ComandoResultado(false, "Ocorreu um erro ao adicionar cliente", null);
+        }
+
+        public async Task<ComandoResultado> Manipular(DesativarAtivarClienteComando comando)
+        {
+            comando.Validar();
+            if (comando.Invalid)
+                return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
+
+            var cliente = await _clienteRepositorio.ObterCliente(comando.EmpresaId, comando.ClienteId);
+            if(cliente is null)
+                return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
+
+            cliente.AtivarDesativar(comando.Ativo);
+
+            _clienteRepositorio.AtualizarCliente(cliente);
+
+            var commitou = await _clienteRepositorio.UnidadeDeTrabalho.Commit();
+            return commitou
+                ? new ComandoResultado(true, "Sucesso ao atualizar cliente", cliente)
+                : new ComandoResultado(false, "Ocorreu um erro ao atualizar cliente", null);
         }
     }
 }

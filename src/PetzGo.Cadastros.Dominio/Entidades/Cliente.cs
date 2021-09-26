@@ -10,11 +10,13 @@ namespace PetzGo.Cadastros.Dominio.Entidades
 
         public Cliente(string whatsApp, string nome, Guid empresaId)
         {
+            Ativo = true;
             WhatsApp = whatsApp;
             Nome = nome;
             EmpresaId = empresaId;
         }
 
+        public bool Ativo { get; private set; }
         public string WhatsApp { get; private set; }
         public string Nome { get; private set; }
 
@@ -34,6 +36,11 @@ namespace PetzGo.Cadastros.Dominio.Entidades
         public void AdicionarPet(TipoPetEnum tipoPet, string nome, Guid idPetCaracteristica)
         {
             Pet = new Pet(tipoPet, nome, idPetCaracteristica);
+        }
+
+        public void AtivarDesativar(bool ativo)
+        {
+            Ativo = ativo;
         }
     }
 }
