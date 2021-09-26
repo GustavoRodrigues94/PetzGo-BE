@@ -33,10 +33,19 @@ namespace PetzGo.Cadastros.Infra.Contexto
 
         public async Task<bool> Commit()
         {
-            var sucesso = await base.SaveChangesAsync() > 0;
-            if (sucesso) await _mediatorManipulador.PublicarEventos(this);
+            try
+            {
+                var sucesso = await base.SaveChangesAsync() > 0;
+                if (sucesso) await _mediatorManipulador.PublicarEventos(this);
 
-            return sucesso;
+                return sucesso;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            
         }
     }
 }

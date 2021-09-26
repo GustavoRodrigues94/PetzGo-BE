@@ -41,9 +41,7 @@ namespace PetzGo.Cadastros.Dominio.Entidades
 
         public void AdicionarEndereco(string cep, string logradouro, string numero, string bairro, string complemento, string cidade, string estado)
         {
-            var empresaEndereco = new Endereco(cep, logradouro, numero, bairro, complemento, cidade, estado);
-            Endereco = empresaEndereco;
-            EnderecoId = empresaEndereco.Id;
+            Endereco = new Endereco(cep, logradouro, numero, bairro, complemento, cidade, estado);
         }
 
         public void AdicionarEmpresaServico(Guid empresaId, Guid servicoPetCaracteristicaId, TipoPetEnum tipoPet, decimal valor, int tempoMinutos) =>

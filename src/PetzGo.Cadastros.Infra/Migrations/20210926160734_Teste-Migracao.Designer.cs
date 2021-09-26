@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PetzGo.Cadastros.Infra.Contexto;
 
 namespace PetzGo.Cadastros.Infra.Migrations
 {
     [DbContext(typeof(CadastrosContexto))]
-    partial class CadastrosContextoModelSnapshot : ModelSnapshot
+    [Migration("20210926160734_Teste-Migracao")]
+    partial class TesteMigracao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

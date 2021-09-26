@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Flunt.Notifications;
 using PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos;
-using PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos;
 using PetzGo.Cadastros.Dominio.Entidades;
 using PetzGo.Cadastros.Dominio.Repositorios;
 using PetzGo.Core.Mensagens.Comandos;

@@ -62,6 +62,9 @@ namespace PetzGo.API.Middlewares
             services.AddScoped<IEmpresaRepositorio, EmpresaRepositorio>();
             services.AddScoped<IEmpresaConsultas, EmpresaConsultas>();
 
+            services.AddScoped<ClienteComandoManipulador, ClienteComandoManipulador>();
+            services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
+
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddScoped<ControleAcessoComandoManipulador, ControleAcessoComandoManipulador>();
 
