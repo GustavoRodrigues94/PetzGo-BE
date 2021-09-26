@@ -6,11 +6,10 @@ namespace PetzGo.Cadastros.Dominio.Entidades
 {
     public class Pet : Entidade
     {
-        public Pet(TipoPetEnum tipoPet, string nome, Guid clienteId, Guid petCaracteristicaId)
+        public Pet(TipoPetEnum tipoPet, string nome, Guid petCaracteristicaId)
         {
             TipoPet = tipoPet;
             Nome = nome;
-            ClienteId = clienteId;
             PetCaracteristicaId = petCaracteristicaId;
         }
 

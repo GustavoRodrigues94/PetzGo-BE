@@ -9,7 +9,7 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos
 {
     public class AdicionarClienteComando : Notifiable, IComando
     {
-        public AdicionarClienteComando(Guid empresaId, string nome, string whatsApp, Endereco endereco, Pet pet)
+        public AdicionarClienteComando(Guid empresaId, string nome, string whatsApp, EnderecoComando endereco, PetComando pet)
         {
             EmpresaId = empresaId;
             Nome = nome;
@@ -22,8 +22,8 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos
         public string Nome { get; set; }
         public string WhatsApp { get; set; }
 
-        public Endereco Endereco { get; set; }
-        public Pet Pet { get; set; }
+        public EnderecoComando Endereco { get; set; }
+        public PetComando Pet { get; set; }
 
         public void Validar() => AddNotifications(new Contract()
             .IsNotEmpty(EmpresaId, "EmpresaId", "Campo obrigatório.")
@@ -42,7 +42,7 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos
         );
     }
 
-    public class Endereco
+    public class EnderecoComando
     {
         public string CEP { get; set; }
         public string Logradouro { get; set; }
@@ -53,7 +53,7 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos
         public string Estado { get; set; }
     }
 
-    public class Pet
+    public class PetComando
     {
         public string Nome { get; set; }
         public Guid IdPetCaracteristica { get; set; }

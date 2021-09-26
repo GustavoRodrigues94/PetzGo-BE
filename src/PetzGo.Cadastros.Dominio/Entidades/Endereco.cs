@@ -1,4 +1,5 @@
-﻿using PetzGo.Core.DominioBase;
+﻿using System;
+using PetzGo.Core.DominioBase;
 
 namespace PetzGo.Cadastros.Dominio.Entidades
 {
@@ -25,7 +26,10 @@ namespace PetzGo.Cadastros.Dominio.Entidades
         public string Cidade { get; private set; }
         public string Estado { get; private set; }
 
-        public Empresa? Empresa { get; private set; }
-        public Cliente? Cliente { get; private set; }
+        public Guid? EmpresaId { get; private set; }
+        public Empresa Empresa { get; private set; }
+
+        public Guid? ClienteId { get; private set; }
+        public Cliente Cliente { get; private set; }
     }
 }

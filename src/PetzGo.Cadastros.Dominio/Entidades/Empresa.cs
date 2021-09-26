@@ -30,7 +30,7 @@ namespace PetzGo.Cadastros.Dominio.Entidades
         public string WhatsApp { get; private set; }
         public string RotuloLink { get; private set; }
 
-        public Guid EnderecoId { get; private set; }
+        public Guid? EnderecoId { get; private set; }
         public Endereco Endereco { get; private set; }
 
         private readonly List<EmpresaServico> _empresaServicos;
