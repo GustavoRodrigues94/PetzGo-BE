@@ -29,5 +29,31 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas
                 TipoPet = cliente.Pet.TipoPet.ObterDescricaoEnum(),
                 NomePet = cliente.Pet.Nome
             }).ToListAsync();
+
+        public async Task<ClienteCompletoViewModel> ObterClientePorId(Guid empresaId, Guid clienteId) =>
+            await _clienteRepositorio.ObterClienteCompleto(empresaId, clienteId).Select(cliente =>
+                new ClienteCompletoViewModel
+                {
+                    Id = cliente.Id,
+                    Nome = cliente.Nome,
+                    WhatsApp = cliente.WhatsApp,
+                    Endereco = new EnderecoViewModel
+                    {
+                        Cep = cliente.Endereco.CEP,
+                        Bairro = cliente.Endereco.Bairro,
+                        Cidade = cliente.Endereco.Cidade,
+                        Complemento = cliente.Endereco.Complemento,
+                        Logradouro = cliente.Endereco.Logradouro,
+                        Estado = cliente.Endereco.Estado,
+                        Numero = cliente.Endereco.Numero
+                    },
+                    Pet = new PetViewModel
+                    {
+                        Id = cliente.Pet.Id,
+                        IdPetCaracteristica = cliente.Pet.PetCaracteristicaId,
+                        Nome = cliente.Pet.Nome,
+                        TipoPet = cliente.Pet.TipoPet.ToString()
+                    }
+                }).FirstOrDefaultAsync();
     }
 }
