@@ -14,5 +14,3 @@ C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\
 C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.pdb
 C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.dll
 C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.pdb
-C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Dominio.dll
-C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Dominio.pdb

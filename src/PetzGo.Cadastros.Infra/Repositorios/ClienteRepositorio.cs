@@ -39,8 +39,13 @@ namespace PetzGo.Cadastros.Infra.Repositorios
                 .Include(c => c.Pet).ThenInclude(p => p.PetCaracteristica)
                 .AsQueryable();
 
-        public async Task<Cliente> ObterCliente(Guid empresaId, Guid clienteId) => await _contexto.Cliente
+        public async Task<Cliente> ObterClienteTrack(Guid empresaId, Guid clienteId) => await _contexto.Cliente
             .AsNoTrackingWithIdentityResolution()
+            .FirstOrDefaultAsync(x => x.EmpresaId == empresaId && x.Id == clienteId);
+
+        public async Task<Cliente> ObterClienteCompletoTrack(Guid empresaId, Guid clienteId) => await _contexto.Cliente
+            .Include(c => c.Endereco)
+            .Include(c => c.Pet).ThenInclude(p => p.PetCaracteristica)
             .FirstOrDefaultAsync(x => x.EmpresaId == empresaId && x.Id == clienteId);
 
         public void Dispose() => _contexto?.Dispose();

@@ -28,6 +28,13 @@ namespace PetzGo.API.Controllers
             await manipulador.Manipular(comando);
 
         [Route("")]
+        [HttpPut]
+        public async Task<ActionResult<ComandoResultado>> AlterarCliente(
+            [FromBody] AlterarClienteComando comando,
+            [FromServices] ClienteComandoManipulador manipulador) =>
+            await manipulador.Manipular(comando);
+
+        [Route("")]
         [HttpPatch]
         public async Task<ActionResult<ComandoResultado>> DesativarCliente(
             [FromBody] DesativarAtivarClienteComando comando,

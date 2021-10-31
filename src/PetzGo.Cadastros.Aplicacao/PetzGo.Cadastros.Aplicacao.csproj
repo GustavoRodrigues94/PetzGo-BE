@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PetzGo.Cadastros.Dominio\PetzGo.Cadastros.Dominio.csproj" />
-    <ProjectReference Include="..\PetzGo.ControleAcesso.Dominio\PetzGo.ControleAcesso.Dominio.csproj" />
     <ProjectReference Include="..\PetzGo.Core\PetzGo.Core.csproj" />
   </ItemGroup>
 

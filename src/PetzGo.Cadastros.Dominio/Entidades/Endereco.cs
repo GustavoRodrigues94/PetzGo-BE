@@ -29,5 +29,16 @@ namespace PetzGo.Cadastros.Dominio.Entidades
         public Empresa Empresa { get; private set; }
 
         public Cliente Cliente { get; private set; }
+
+        public void Alterar(string cep, string logradouro, string numero, string bairro, string complemento, string cidade, string estado)
+        {
+            CEP = cep;
+            Logradouro = logradouro;
+            Numero = numero;
+            Bairro = bairro;
+            Complemento = complemento;
+            Cidade = cidade;
+            Estado = estado;
+        }
     }
 }

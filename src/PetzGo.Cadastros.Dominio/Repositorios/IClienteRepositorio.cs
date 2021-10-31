@@ -14,6 +14,7 @@ namespace PetzGo.Cadastros.Dominio.Repositorios
         IQueryable<Cliente> ObterClienteCompleto(Guid empresaId, Guid clienteId);
         IQueryable<Cliente> ObterClientes(Guid empresaId);
 
-        Task<Cliente> ObterCliente(Guid empresaId, Guid clienteId);
+        Task<Cliente> ObterClienteTrack(Guid empresaId, Guid clienteId);
+        Task<Cliente> ObterClienteCompletoTrack(Guid empresaId, Guid clienteId);
     }
 }

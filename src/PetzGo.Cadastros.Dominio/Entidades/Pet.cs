@@ -21,5 +21,12 @@ namespace PetzGo.Cadastros.Dominio.Entidades
 
         public Guid PetCaracteristicaId { get; private set; }
         public PetCaracteristica PetCaracteristica { get; private set; }
+
+        public void Alterar(TipoPetEnum tipoPet, string nomePet, Guid idPetCaracteristica)
+        {
+            TipoPet = tipoPet;
+            Nome = nomePet;
+            PetCaracteristicaId = idPetCaracteristica;
+        }
     }
 }

@@ -24,7 +24,9 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas
                 Ativo = cliente.Ativo,
                 NomeCliente = cliente.Nome,
                 WhatsApp = cliente.WhatsApp,
-                Endereco = $"{cliente.Endereco.Logradouro}, {cliente.Endereco.Numero}. {cliente.Endereco.Complemento} {cliente.Endereco.Cidade} - {cliente.Endereco.Estado}",
+                Endereco = !string.IsNullOrWhiteSpace(cliente.Endereco.CEP)
+                    ? $"{cliente.Endereco.Logradouro}, {cliente.Endereco.Numero}. {cliente.Endereco.Complemento} {cliente.Endereco.Cidade} - {cliente.Endereco.Estado}"
+                    : "Não informado",
                 PetId = cliente.Pet.Id,
                 TipoPet = cliente.Pet.TipoPet.ObterDescricaoEnum(),
                 NomePet = cliente.Pet.Nome
@@ -52,7 +54,7 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas
                         Id = cliente.Pet.Id,
                         IdPetCaracteristica = cliente.Pet.PetCaracteristicaId,
                         Nome = cliente.Pet.Nome,
-                        TipoPet = cliente.Pet.TipoPet.ToString()
+                        TipoPet = cliente.Pet.TipoPet
                     }
                 }).FirstOrDefaultAsync();
     }

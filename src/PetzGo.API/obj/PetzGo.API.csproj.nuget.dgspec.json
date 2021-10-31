@@ -137,9 +137,6 @@
               "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj": {
                 "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj"
               },
-              "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Dominio\\PetzGo.ControleAcesso.Dominio.csproj": {
-                "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Dominio\\PetzGo.ControleAcesso.Dominio.csproj"
-              },
               "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
                 "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj"
               }
@@ -180,9 +177,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

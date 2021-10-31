@@ -42,5 +42,15 @@ namespace PetzGo.Cadastros.Dominio.Entidades
         {
             Ativo = ativo;
         }
+
+        public void Alterar(string whatsApp, string nomeCliente, 
+                            string cep, string logradouro, string numero, string bairro, string complemento, string cidade, string estado,
+                            TipoPetEnum tipoPet, string nomePet, Guid idPetCaracteristica)
+        {
+            WhatsApp = whatsApp;
+            Nome = nomeCliente;
+            Endereco.Alterar(cep, logradouro, numero, bairro, complemento, cidade, estado);
+            Pet.Alterar(tipoPet, nomePet, idPetCaracteristica);
+        }
     }
 }
