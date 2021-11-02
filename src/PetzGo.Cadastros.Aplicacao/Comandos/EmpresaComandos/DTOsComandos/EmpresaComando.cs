@@ -1,9 +1,8 @@
 ﻿using System;
-using PetzGo.Core.Mensagens.Comandos;
 
 namespace PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos.DTOsComandos
 {
-    public class EmpresaComando : IComando
+    public class EmpresaComando
     {
         public Guid TipoNegocioId { get; set; }
         public string NomeFantasia { get; set; }

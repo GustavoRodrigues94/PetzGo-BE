@@ -8,7 +8,7 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos
 {
     public class AlterarClienteComando : Notifiable, IComando
     {
-        public AlterarClienteComando(Guid id, Guid empresaId, string nome, string whatsApp, EnderecoComando endereco, PetComando pet)
+        public AlterarClienteComando(Guid id, Guid empresaId, string nome, string whatsApp, EnderecoClienteComando endereco, PetComando pet)
         {
             ClienteId = id;
             EmpresaId = empresaId;
@@ -23,7 +23,7 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos
         public string Nome { get; set; }
         public string WhatsApp { get; set; }
 
-        public EnderecoComando Endereco { get; set; }
+        public EnderecoClienteComando Endereco { get; set; }
         public PetComando Pet { get; set; }
 
         public void Validar() => AddNotifications(new Contract()

@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PetzGo.ControleAcesso.Aplicacao.Comandos;
 using PetzGo.ControleAcesso.Aplicacao.Manipuladores;

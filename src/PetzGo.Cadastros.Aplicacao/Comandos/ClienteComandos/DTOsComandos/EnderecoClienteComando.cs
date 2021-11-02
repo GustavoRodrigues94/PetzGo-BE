@@ -1,6 +1,6 @@
 ﻿namespace PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos.DTOsComandos
 {
-    public class EnderecoComando
+    public class EnderecoClienteComando
     {
         public string CEP { get; set; }
         public string Logradouro { get; set; }

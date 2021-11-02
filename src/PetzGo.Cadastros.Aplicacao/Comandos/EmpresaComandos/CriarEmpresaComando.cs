@@ -9,18 +9,18 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos
     public class CriarEmpresaComando : Notifiable, IComando
     {
         public CriarEmpresaComando(
-            EmpresaComando empresaComando, 
-            EnderecoComando enderecoComando,
-            LoginComando loginComando)
+            EmpresaComando empresa, 
+            EnderecoEmpresaComando endereco,
+            LoginComando login)
         {
-            EmpresaComando = empresaComando;
-            EnderecoComando = enderecoComando;
-            LoginComando = loginComando;
+            EmpresaComando = empresa;
+            EnderecoComando = endereco;
+            LoginComando = login;
         }
 
-        public EmpresaComando EmpresaComando { get; private set; }
-        public EnderecoComando EnderecoComando { get; private set; }
-        public LoginComando LoginComando { get; private set; }
+        public EmpresaComando EmpresaComando { get; set; }
+        public EnderecoEmpresaComando EnderecoComando { get; set; }
+        public LoginComando LoginComando { get; set; }
 
         public void Validar() => AddNotifications(new Contract()
             .IsNotEmpty(EmpresaComando.TipoNegocioId, "TipoNegocio", "Campo obrigatório.")

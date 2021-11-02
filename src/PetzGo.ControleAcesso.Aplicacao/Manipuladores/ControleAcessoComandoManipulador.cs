@@ -55,7 +55,7 @@ namespace PetzGo.ControleAcesso.Aplicacao.Manipuladores
                     email = usuario.Email, 
                     tipoUsuario = usuario.TipoUsuario, 
                     empresaId = usuario.EmpresaId,
-                    empresaRotuloLink = usuario.EmpresaNomeFantasia, 
+                    empresaNomeFantasia = usuario.EmpresaNomeFantasia, 
                     id = usuario.Id
                 }
             });

@@ -1,8 +1,6 @@
-﻿using PetzGo.Core.Mensagens.Comandos;
-
-namespace PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos.DTOsComandos
+﻿namespace PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos.DTOsComandos
 {
-    public class EnderecoComando : IComando
+    public class EnderecoEmpresaComando
     {
         public string CEP { get; set; }
         public string Rua { get; set; }
