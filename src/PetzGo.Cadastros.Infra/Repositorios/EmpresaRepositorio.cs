@@ -55,8 +55,8 @@ namespace PetzGo.Cadastros.Infra.Repositorios
                 .OrderBy(x => x.TipoDiaSemana)
                 .AsQueryable();
 
-        public async Task<Empresa> ObterEmpresaPorRotuloLink(string rotuloLink) =>
-            await _contexto.Empresa.FirstOrDefaultAsync(x => x.RotuloLink == rotuloLink);
+        public async Task<Empresa> ObterEmpresaPorCNPJ(string CNPJ) =>
+            await _contexto.Empresa.FirstOrDefaultAsync(x => x.CNPJ == CNPJ);
 
         public void AdicionarEmpresa(Empresa empresa) => _contexto.Empresa.Add(empresa);
 

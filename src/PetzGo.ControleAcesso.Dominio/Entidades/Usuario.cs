@@ -8,13 +8,13 @@ namespace PetzGo.ControleAcesso.Dominio.Entidades
     {
         protected Usuario() { }
 
-        public Usuario(string email, string senha, TipoUsuarioEnum tipoUsuario, Guid empresaId, string empresaRotuloLink)
+        public Usuario(string email, string senha, TipoUsuarioEnum tipoUsuario, Guid empresaId, string empresaNomeFantasia)
         {
             Email = email;
             Senha = senha;
             TipoUsuario = tipoUsuario;
             EmpresaId = empresaId;
-            EmpresaRotuloLink = empresaRotuloLink;
+            EmpresaNomeFantasia = empresaNomeFantasia;
         }
 
         public string Email { get; private set; }
@@ -22,7 +22,7 @@ namespace PetzGo.ControleAcesso.Dominio.Entidades
         public TipoUsuarioEnum TipoUsuario { get; private set; }
 
         public Guid EmpresaId { get; private set; }
-        public string EmpresaRotuloLink { get; private set; }
+        public string EmpresaNomeFantasia { get; private set; }
 
         public void EsconderSenha() => Senha = string.Empty;
     }

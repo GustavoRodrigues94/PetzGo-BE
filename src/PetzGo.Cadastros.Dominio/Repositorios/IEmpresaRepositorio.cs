@@ -18,7 +18,7 @@ namespace PetzGo.Cadastros.Dominio.Repositorios
 
         IQueryable<DiaSemana> ObterDiasSemana();
 
-        Task<Empresa> ObterEmpresaPorRotuloLink(string rotuloLink);
+        Task<Empresa> ObterEmpresaPorCNPJ(string CNPJ);
 
         void AdicionarEmpresa(Empresa empresa);
     }

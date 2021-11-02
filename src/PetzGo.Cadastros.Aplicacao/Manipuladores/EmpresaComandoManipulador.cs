@@ -23,32 +23,24 @@ namespace PetzGo.Cadastros.Aplicacao.Manipuladores
             if(comando.Invalid)
                 return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
 
-            var tipoNegocio = await _empresaRepositorio.ObterTipoNegocioPorId(comando.PrimeiraEtapaComando.TipoNegocioId);
+            var tipoNegocio = await _empresaRepositorio.ObterTipoNegocioPorId(comando.EmpresaComando.TipoNegocioId);
             if(tipoNegocio is null)
                 return new ComandoResultado(false, RetornoComando.MensagemComandoCampoInexistente("TipoNegocioId"), null);
 
-            var empresaExistente = await _empresaRepositorio.ObterEmpresaPorRotuloLink(comando.PrimeiraEtapaComando.RotuloLink);
+            var empresaExistente = await _empresaRepositorio.ObterEmpresaPorCNPJ(comando.EmpresaComando.CNPJ);
             if(!(empresaExistente is null))
                 return new ComandoResultado(false, RetornoComando.MensagemComandoCampoExistente("Empresa"), null);
 
-            var empresa = new Empresa(comando.PrimeiraEtapaComando.TipoNegocioId,
-                comando.PrimeiraEtapaComando.NomeFantasia, comando.PrimeiraEtapaComando.CNPJ,
-                comando.PrimeiraEtapaComando.RazaoSocial, comando.PrimeiraEtapaComando.WhatsApp,
-                comando.PrimeiraEtapaComando.RotuloLink);
+            var empresa = new Empresa(comando.EmpresaComando.TipoNegocioId,
+                comando.EmpresaComando.NomeFantasia, comando.EmpresaComando.CNPJ, comando.EmpresaComando.WhatsApp);
 
-            empresa.AdicionarEndereco(comando.SegundaEtapaComando.CEP, comando.SegundaEtapaComando.Rua,
-                comando.SegundaEtapaComando.Numero, comando.SegundaEtapaComando.Bairro,
-                comando.SegundaEtapaComando.Complemento, comando.SegundaEtapaComando.Cidade,
-                comando.SegundaEtapaComando.Estado);
+            empresa.AdicionarEndereco(comando.EnderecoComando.CEP, comando.EnderecoComando.Rua,
+                comando.EnderecoComando.Numero, comando.EnderecoComando.Bairro,
+                comando.EnderecoComando.Complemento, comando.EnderecoComando.Cidade,
+                comando.EnderecoComando.Estado);
 
-            comando.TerceiraEtapaComando.ForEach(x =>
-                empresa.AdicionarEmpresaServico(empresa.Id, x.ServicoPetCaracteristicaId, x.TipoPet, x.Valor, x.Tempo));
-
-            comando.QuartaEtapaComando.ForEach(x =>
-                empresa.AdicionarEmpresaHorario(empresa.Id, x.Id, x.HoraInicio, x.HoraFim));
-
-            empresa.AdicionarEvento(new EmpresaAdicionadaEvento(empresa.Id, empresa.RotuloLink,
-                comando.QuintaEtapaComando.Email, comando.QuintaEtapaComando.Senha));
+            empresa.AdicionarEvento(new EmpresaAdicionadaEvento(empresa.Id, empresa.NomeFantasia,
+                comando.LoginComando.Email, comando.LoginComando.Senha));
 
             _empresaRepositorio.AdicionarEmpresa(empresa);
 

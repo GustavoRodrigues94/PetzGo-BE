@@ -14,7 +14,7 @@ namespace PetzGo.ControleAcesso.Infra.Mapeamento
             builder.Property(x => x.Senha).HasColumnType("varchar(20)").IsRequired();
             builder.Property(x => x.TipoUsuario).HasColumnType("smallint").IsRequired();
             builder.Property(x => x.EmpresaId);
-            builder.Property(x => x.EmpresaRotuloLink).HasColumnType("varchar(30)").IsRequired();
+            builder.Property(x => x.EmpresaNomeFantasia).HasColumnType("varchar(200)").IsRequired();
         }
     }
 }

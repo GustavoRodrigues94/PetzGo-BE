@@ -23,7 +23,7 @@ namespace PetzGo.ControleAcesso.Aplicacao.Manipuladores
             if(comando.Invalid)
                 return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
 
-            var usuario = new Usuario(comando.Email, comando.Senha, comando.TipoUsuario, comando.EmpresaId, comando.EmpresaRotuloLink);
+            var usuario = new Usuario(comando.Email, comando.Senha, comando.TipoUsuario, comando.EmpresaId, comando.EmpresaNomeFantasia);
 
             _usuarioRepositorio.AdicionarUsuario(usuario);
 
@@ -55,7 +55,7 @@ namespace PetzGo.ControleAcesso.Aplicacao.Manipuladores
                     email = usuario.Email, 
                     tipoUsuario = usuario.TipoUsuario, 
                     empresaId = usuario.EmpresaId,
-                    empresaRotuloLink = usuario.EmpresaRotuloLink, 
+                    empresaRotuloLink = usuario.EmpresaNomeFantasia, 
                     id = usuario.Id
                 }
             });

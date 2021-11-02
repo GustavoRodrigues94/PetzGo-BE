@@ -1,5 +1,4 @@
 ﻿using System;
-using Flunt.Br.Extensions;
 using Flunt.Notifications;
 using Flunt.Validations;
 using PetzGo.Cadastros.Aplicacao.Comandos.ClienteComandos.DTOsComandos;

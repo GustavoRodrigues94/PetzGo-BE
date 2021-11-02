@@ -9,14 +9,12 @@ namespace PetzGo.Cadastros.Dominio.Entidades
     {
         protected Empresa() { }
 
-        public Empresa(Guid tipoNegocioId, string nomeFantasia, string cnpj, string razaoSocial, string whatsApp, string rotuloLink)
+        public Empresa(Guid tipoNegocioId, string nomeFantasia, string cnpj, string whatsApp)
         {
             TipoNegocioId = tipoNegocioId;
             NomeFantasia = nomeFantasia;
             CNPJ = cnpj;
-            RazaoSocial = razaoSocial;
             WhatsApp = whatsApp;
-            RotuloLink = rotuloLink;
             _empresaServicos = new List<EmpresaServico>();
             _empresaHorarios = new List<EmpresaHorario>();
         }
@@ -26,9 +24,7 @@ namespace PetzGo.Cadastros.Dominio.Entidades
 
         public string NomeFantasia { get; private set; }
         public string CNPJ { get; private set; }
-        public string RazaoSocial { get; private set; }
         public string WhatsApp { get; private set; }
-        public string RotuloLink { get; private set; }
 
         public Guid? EnderecoId { get; private set; }
         public Endereco Endereco { get; private set; }

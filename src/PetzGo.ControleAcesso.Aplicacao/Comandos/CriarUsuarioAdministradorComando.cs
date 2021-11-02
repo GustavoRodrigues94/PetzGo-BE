@@ -8,13 +8,13 @@ namespace PetzGo.ControleAcesso.Aplicacao.Comandos
 {
     public class CriarUsuarioAdministradorComando : Notifiable, IComando
     {
-        public CriarUsuarioAdministradorComando(string email, string senha, TipoUsuarioEnum tipoUsuario, Guid empresaId, string empresaRotuloLink)
+        public CriarUsuarioAdministradorComando(string email, string senha, TipoUsuarioEnum tipoUsuario, Guid empresaId, string empresaNomeFantasia)
         {
             Email = email;
             Senha = senha;
             TipoUsuario = tipoUsuario;
             EmpresaId = empresaId;
-            EmpresaRotuloLink = empresaRotuloLink;
+            EmpresaNomeFantasia = empresaNomeFantasia;
         }
 
         public string Email { get; private set; }
@@ -22,11 +22,11 @@ namespace PetzGo.ControleAcesso.Aplicacao.Comandos
         public TipoUsuarioEnum TipoUsuario { get; private set; }
 
         public Guid EmpresaId { get; private set; }
-        public string EmpresaRotuloLink { get; private set; }
+        public string EmpresaNomeFantasia { get; private set; }
 
         public void Validar() => AddNotifications(new Contract()
             .IsNotEmpty(EmpresaId, "EmpresaId", "Campo obrigatório.")
-            .IsNotNullOrWhiteSpace(EmpresaRotuloLink, "EmpresaRotuloLink", "Campo obrigatório.")
+            .IsNotNullOrWhiteSpace(EmpresaNomeFantasia, "EmpresaNomeFantasia", "Campo obrigatório.")
             .IsEmailOrEmpty(Email, "Email", "Campo inválido.")
             .IsNotNullOrEmpty(Senha, "Senha", "Campo inválido.")
             .AreEquals(TipoUsuario, TipoUsuarioEnum.Administrador, "TipoUsuario", "Campo inválido.")

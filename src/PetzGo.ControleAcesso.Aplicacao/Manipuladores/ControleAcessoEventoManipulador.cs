@@ -29,7 +29,7 @@ namespace PetzGo.ControleAcesso.Aplicacao.Manipuladores
                     evento.Senha,
                     TipoUsuarioEnum.Administrador,
                     evento.EmpresaId,
-                    evento.EmpresaRotuloLink)
+                    evento.EmpresaNomeFantasia)
             );
 
             await Task.CompletedTask;
