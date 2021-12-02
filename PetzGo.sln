@@ -29,6 +29,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetzGo.ControleAcesso.Domin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetzGo.ControleAcesso.Infra", "src\PetzGo.ControleAcesso.Infra\PetzGo.ControleAcesso.Infra.csproj", "{E41354A6-BE2B-4188-9A5B-F44DCB8B8F76}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{0E3159B1-4E5F-4065-B86C-E8F684694D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetzGo.Cadastros.Aplicacao.Testes", "tests\PetzGo.Cadastros.Testes\Aplicacao.Testes\PetzGo.Cadastros.Aplicacao.Testes.csproj", "{014835B0-DFC6-4E3E-A255-484B5BA9F726}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{E41354A6-BE2B-4188-9A5B-F44DCB8B8F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E41354A6-BE2B-4188-9A5B-F44DCB8B8F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E41354A6-BE2B-4188-9A5B-F44DCB8B8F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{014835B0-DFC6-4E3E-A255-484B5BA9F726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014835B0-DFC6-4E3E-A255-484B5BA9F726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014835B0-DFC6-4E3E-A255-484B5BA9F726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014835B0-DFC6-4E3E-A255-484B5BA9F726}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +91,8 @@ Global
 		{E298FBBC-EE94-4C81-B359-E785F7434F63} = {405CA97B-DF37-4A64-959B-82A9CC5589BF}
 		{F2F0A6C6-48AF-4893-B53D-15156D12A667} = {405CA97B-DF37-4A64-959B-82A9CC5589BF}
 		{E41354A6-BE2B-4188-9A5B-F44DCB8B8F76} = {405CA97B-DF37-4A64-959B-82A9CC5589BF}
+		{0E3159B1-4E5F-4065-B86C-E8F684694D79} = {A911D9A9-A819-439A-B091-91183B27009A}
+		{014835B0-DFC6-4E3E-A255-484B5BA9F726} = {0E3159B1-4E5F-4065-B86C-E8F684694D79}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D9EA351-0AA2-4009-86A6-C2A23C44BD85}
