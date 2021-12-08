@@ -1,6 +1,8 @@
 ﻿using System;
 using PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos;
 using PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos.DTOsComandos;
+using PetzGo.Cadastros.Dominio.Entidades;
+using PetzGo.Core.Mensagens.EventoIntegracao;
 using Xunit;
 
 namespace PetzGo.Cadastros.Aplicacao.Testes.Comandos.EmpresaComandos
@@ -63,6 +65,19 @@ namespace PetzGo.Cadastros.Aplicacao.Testes.Comandos.EmpresaComandos
         public void Dispose()
         {
 
+        }
+
+        public Empresa GerarEmpresaValida(CriarEmpresaComando adicionarEmpresaComando)
+        {
+            var empresa = new Empresa(adicionarEmpresaComando.EmpresaComando.TipoNegocioId,
+                adicionarEmpresaComando.EmpresaComando.NomeFantasia, adicionarEmpresaComando.EmpresaComando.CNPJ, adicionarEmpresaComando.EmpresaComando.WhatsApp);
+
+            empresa.AdicionarEndereco(adicionarEmpresaComando.EnderecoComando.CEP, adicionarEmpresaComando.EnderecoComando.Rua,
+                adicionarEmpresaComando.EnderecoComando.Numero, adicionarEmpresaComando.EnderecoComando.Bairro,
+                adicionarEmpresaComando.EnderecoComando.Complemento, adicionarEmpresaComando.EnderecoComando.Cidade,
+                adicionarEmpresaComando.EnderecoComando.Estado);
+
+            return empresa;
         }
     }
 }

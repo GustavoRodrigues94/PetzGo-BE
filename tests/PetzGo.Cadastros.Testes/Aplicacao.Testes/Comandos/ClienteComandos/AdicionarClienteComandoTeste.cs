@@ -13,7 +13,7 @@ namespace PetzGo.Cadastros.Aplicacao.Testes.Comandos.ClienteComandos
         }
 
         [Fact(DisplayName = "Adicionar cliente comando válido")]
-        [Trait("Categoria", "PetzGo.Cadastros.Aplicacao.Cliente")]
+        [Trait("PetzGo.Cadastros.Aplicacao.Comandos", "Cliente")]
         public void AdicionarClienteComando_DeveSerValido()
         {
             // Arrange
@@ -28,7 +28,7 @@ namespace PetzGo.Cadastros.Aplicacao.Testes.Comandos.ClienteComandos
         }
 
         [Fact(DisplayName = "Adicionar cliente comando inválido")]
-        [Trait("Categoria", "PetzGo.Cadastros.Aplicacao.Cliente")]
+        [Trait("PetzGo.Cadastros.Aplicacao.Comandos", "Cliente")]
         public void AdicionarClienteComando_DeveSerInvalido()
         {
             // Arrange

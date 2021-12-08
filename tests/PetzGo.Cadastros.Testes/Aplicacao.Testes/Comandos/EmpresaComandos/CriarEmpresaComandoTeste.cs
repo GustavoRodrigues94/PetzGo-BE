@@ -13,7 +13,7 @@ namespace PetzGo.Cadastros.Aplicacao.Testes.Comandos.EmpresaComandos
         }
 
         [Fact(DisplayName = "Adicionar empresa comando válido")]
-        [Trait("Categoria", "PetzGo.Cadastros.Aplicacao.Empresa")]
+        [Trait("PetzGo.Cadastros.Aplicacao.Comandos", "Empresa")]
         public void CriarEmpresaComando_DeveSerValido()
         {
             // Arrange
@@ -28,7 +28,7 @@ namespace PetzGo.Cadastros.Aplicacao.Testes.Comandos.EmpresaComandos
         }
 
         [Fact(DisplayName = "Adicionar empresa comando inválido")]
-        [Trait("Categoria", "PetzGo.Cadastros.Aplicacao.Empresa")]
+        [Trait("PetzGo.Cadastros.Aplicacao.Comandos", "Empresa")]
         public void CriarEmpresaComando_DeveSerInvalido()
         {
             // Arrange

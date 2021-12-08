@@ -23,10 +23,6 @@ namespace PetzGo.Cadastros.Aplicacao.Manipuladores
             if(comando.Invalid)
                 return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
 
-            var tipoNegocio = await _empresaRepositorio.ObterTipoNegocioPorId(comando.EmpresaComando.TipoNegocioId);
-            if(tipoNegocio is null)
-                return new ComandoResultado(false, RetornoComando.MensagemComandoCampoInexistente("TipoNegocioId"), null);
-
             var empresaExistente = await _empresaRepositorio.ObterEmpresaPorCNPJ(comando.EmpresaComando.CNPJ);
             if(!(empresaExistente is null))
                 return new ComandoResultado(false, RetornoComando.MensagemComandoCampoExistente("Empresa"), null);
