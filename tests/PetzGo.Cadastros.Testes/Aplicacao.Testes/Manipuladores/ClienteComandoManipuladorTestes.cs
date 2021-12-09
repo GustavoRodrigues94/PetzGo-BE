@@ -2,7 +2,6 @@
 using Moq;
 using PetzGo.Cadastros.Aplicacao.Manipuladores;
 using PetzGo.Cadastros.Aplicacao.Testes.Comandos.ClienteComandos;
-using PetzGo.Cadastros.Dominio.Entidades;
 using PetzGo.Cadastros.Dominio.Repositorios;
 using Xunit;
 
