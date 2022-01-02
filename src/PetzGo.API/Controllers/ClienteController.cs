@@ -50,5 +50,10 @@ namespace PetzGo.API.Controllers
         [HttpGet]
         public async Task<ClienteCompletoViewModel> ObterClientePorId(Guid empresaId, Guid clienteId) =>
             await _clienteConsultas.ObterClientePorId(empresaId, clienteId);
+
+        [Route("{empresaId:Guid}/{whatsApp}")]
+        [HttpGet]
+        public async Task<ClienteCompletoViewModel> ObterClientePorWhatsApp(Guid empresaId, string whatsApp) =>
+            await _clienteConsultas.ObterClientePorWhatsApp(empresaId, whatsApp);
     }
 }

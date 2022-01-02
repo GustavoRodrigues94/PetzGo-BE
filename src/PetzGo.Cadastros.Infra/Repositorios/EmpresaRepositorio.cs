@@ -35,6 +35,15 @@ namespace PetzGo.Cadastros.Infra.Repositorios
                 .OrderBy(x => x.Nome)
                 .AsQueryable();
 
+        public async Task<EmpresaServico> ObterServicoEmpresaPetCaracteristica(Guid empresaId, Guid servicoId, Guid petCaracteristicaId) =>
+            await _contexto.EmpresaServico
+                .AsNoTrackingWithIdentityResolution()
+                .Include(x => x.ServicoPetCaracteristica)
+                .Where(x => x.EmpresaId == empresaId)
+                .Where(x => x.ServicoPetCaracteristica.ServicoId == servicoId)
+                .Where(x => x.ServicoPetCaracteristica.PetCaracteristicaId == petCaracteristicaId)
+                .FirstOrDefaultAsync();
+
         public IQueryable<ServicoPetCaracteristica> ObterPetCaracteristicasPorServicoId(Guid servicoId) =>
             _contexto.ServicoPetCaracteristicas
                 .AsNoTrackingWithIdentityResolution()

@@ -11,5 +11,6 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.EmpresaConsultas
         Task<IEnumerable<DiaSemanaViewModel>> ObterTodosDiasSemana();
         Task<IEnumerable<ServicoPetCaracteristicaViewModel>> ObterPetCaracteristicasPorServicoId(Guid servicoId);
         Task<IEnumerable<PetCaracteristicaViewModel>> ObterPetCaracteristicas();
+        Task<EmpresaServicoViewModel> ObterServicoEmpresaPetCaracteristica(Guid empresaId, Guid servicoId, Guid idPetCaracteristica);
     }
 }

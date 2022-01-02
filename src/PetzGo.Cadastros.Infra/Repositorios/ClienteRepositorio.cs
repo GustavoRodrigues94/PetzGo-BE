@@ -39,6 +39,14 @@ namespace PetzGo.Cadastros.Infra.Repositorios
                 .Include(c => c.Pet).ThenInclude(p => p.PetCaracteristica)
                 .AsQueryable();
 
+        public IQueryable<Cliente> ObterClientePorWhatsApp(Guid empresaId, string whatsApp) =>
+            _contexto.Cliente
+                .AsNoTrackingWithIdentityResolution()
+                .Where(x => x.EmpresaId == empresaId && x.WhatsApp == whatsApp)
+                .Include(c => c.Endereco)
+                .Include(c => c.Pet).ThenInclude(p => p.PetCaracteristica)
+                .AsQueryable();
+
         public async Task<Cliente> ObterClienteTrack(Guid empresaId, Guid clienteId) => await _contexto.Cliente
             .AsNoTrackingWithIdentityResolution()
             .FirstOrDefaultAsync(x => x.EmpresaId == empresaId && x.Id == clienteId);
@@ -49,6 +57,5 @@ namespace PetzGo.Cadastros.Infra.Repositorios
             .FirstOrDefaultAsync(x => x.EmpresaId == empresaId && x.Id == clienteId);
 
         public void Dispose() => _contexto?.Dispose();
-
     }
 }

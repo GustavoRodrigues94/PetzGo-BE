@@ -8,5 +8,6 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas
     {
         Task<IEnumerable<ClienteViewModel>> ObterClientes(Guid empresaId);
         Task<ClienteCompletoViewModel> ObterClientePorId(Guid empresaId, Guid clienteId);
+        Task<ClienteCompletoViewModel> ObterClientePorWhatsApp(Guid empresaId, string whatsApp);
     }
 }

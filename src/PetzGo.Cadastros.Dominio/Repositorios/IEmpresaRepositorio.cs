@@ -12,6 +12,7 @@ namespace PetzGo.Cadastros.Dominio.Repositorios
         Task<TipoNegocio> ObterTipoNegocioPorId(Guid tipoNegocioId);
 
         IQueryable<Servico> ObterServicos();
+        Task<EmpresaServico> ObterServicoEmpresaPetCaracteristica(Guid empresaId, Guid servicoId, Guid petCaracteristicaId);
 
         IQueryable<ServicoPetCaracteristica> ObterPetCaracteristicasPorServicoId(Guid servicoId);
         IQueryable<PetCaracteristica> ObterPetCaracteristicas();

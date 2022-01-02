@@ -28,6 +28,23 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.EmpresaConsultas
                 Nome = servico.Nome
             }).ToListAsync();
 
+        public async Task<EmpresaServicoViewModel> ObterServicoEmpresaPetCaracteristica(Guid empresaId, Guid servicoId, Guid petCaracteristicaId)
+        {
+            var empresaServico = await _empresaRepositorio.ObterServicoEmpresaPetCaracteristica(empresaId, servicoId, petCaracteristicaId);
+            if (empresaServico is null)
+                return null;
+
+            return new EmpresaServicoViewModel
+            {
+                Id = empresaServico.EmpresaId,
+                ServicoPetCaracteristicaId = empresaServico.ServicoPetCaracteristicaId,
+                TipoPet = empresaServico.TipoPet,
+                Valor = empresaServico.Valor,
+                TempoMinutos = empresaServico.TempoEmMinutos 
+            };
+        }
+            
+
         public async Task<IEnumerable<DiaSemanaViewModel>> ObterTodosDiasSemana() =>
             await _empresaRepositorio.ObterDiasSemana().Select(diaSemana => new DiaSemanaViewModel
             {

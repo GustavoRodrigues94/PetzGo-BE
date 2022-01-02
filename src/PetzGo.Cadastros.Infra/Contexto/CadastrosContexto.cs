@@ -19,6 +19,7 @@ namespace PetzGo.Cadastros.Infra.Contexto
         public DbSet<Empresa> Empresa { get; set; }
         public DbSet<TipoNegocio> TipoNegocio { get; set; }
         public DbSet<Servico> Servico { get; set; }
+        public DbSet<EmpresaServico> EmpresaServico { get; set; }
         public DbSet<ServicoPetCaracteristica> ServicoPetCaracteristicas { get; set; }
         public DbSet<DiaSemana> DiasSemana { get; set; }
         public DbSet<PetCaracteristica> PetCaracteristicas { get; set; }
@@ -45,7 +46,6 @@ namespace PetzGo.Cadastros.Infra.Contexto
                 Console.WriteLine(e);
                 throw;
             }
-            
         }
     }
 }

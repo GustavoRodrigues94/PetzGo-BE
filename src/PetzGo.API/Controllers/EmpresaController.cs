@@ -29,6 +29,12 @@ namespace PetzGo.API.Controllers
         public async Task<IEnumerable<TipoNegocioViewModel>> ObterTodosTiposNegocios() =>
             await _empresaConsultas.ObterTodosTiposNegocios();
 
+        [Route("servicos/{empresaId}/{servicoId}/{idPetCaracteristica}")]
+        [HttpGet]
+        public async Task<EmpresaServicoViewModel> ObterServicoEmpresaPetCaracteristica(
+            Guid empresaId, Guid servicoId, Guid idPetCaracteristica) =>
+            await _empresaConsultas.ObterServicoEmpresaPetCaracteristica(empresaId, servicoId, idPetCaracteristica);
+
         [Route("servicos/todos")]
         [HttpGet]
         public async Task<IEnumerable<ServicoViewModel>> ObterTodosServicos() =>
