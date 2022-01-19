@@ -90,3 +90,7 @@ C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\Microsoft.AspNetCore.Js
 C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\PetzGo.Agendamento.Aplicacao.dll
+C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\PetzGo.Agendamento.Dominio.dll
+C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\PetzGo.Agendamento.Aplicacao.pdb
+C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\PetzGo.Agendamento.Dominio.pdb

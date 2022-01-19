@@ -21,7 +21,8 @@ namespace PetzGo.Agendamento.Aplicacao.Manipuladores
         {
             comando.Validar();
             if (comando.Invalid)
-                return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
+                return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando),
+                    comando.Notifications);
 
             var agenda = Agenda.AgendaFactory.NovoAgendamentoIniciado(comando.EmpresaId,
                 comando.DataHoraInicio, comando.TempoEmMinutos);
@@ -35,7 +36,6 @@ namespace PetzGo.Agendamento.Aplicacao.Manipuladores
             return commitou
                 ? new ComandoResultado(true, "Sucesso ao adicionar agendamento", agenda)
                 : new ComandoResultado(false, "Ocorreu um erro ao adicionar agendamento", null);
-
         }
     }
 }

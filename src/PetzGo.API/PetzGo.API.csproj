@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PetzGo.Agendamento.Aplicacao\PetzGo.Agendamento.Aplicacao.csproj" />
     <ProjectReference Include="..\PetzGo.Cadastros.Aplicacao\PetzGo.Cadastros.Aplicacao.csproj" />
     <ProjectReference Include="..\PetzGo.Cadastros.Infra\PetzGo.Cadastros.Infra.csproj" />
     <ProjectReference Include="..\PetzGo.ControleAcesso.Aplicacao\PetzGo.ControleAcesso.Aplicacao.csproj" />

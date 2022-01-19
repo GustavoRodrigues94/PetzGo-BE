@@ -11,11 +11,10 @@ namespace PetzGo.Agendamento.Dominio.Testes
         public void AdicionarServicoAgendamento_NovoAgendamento_DeveCalcularValorTotal()
         {
             // Arrange
-            var agendamento = new Agendamento();
-            var servico = new AgendaServico(Guid.NewGuid(), "Banho & Tosa", new decimal(20.45));
+            var agendamento = Agenda.AgendaFactory.NovoAgendamentoIniciado(Guid.NewGuid(), DateTime.Now, 130);
 
             // Act
-            agendamento.AdicionarServico(servico);
+            agendamento.AdicionarServico("Banho & Tosa", new decimal(20.45), 130);
 
             // Assert
             Assert.Equal(new decimal(20.45), agendamento.ValorTotal);

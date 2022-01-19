@@ -1671,6 +1671,33 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "PetzGo.Agendamento.Aplicacao/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Flunt": "1.0.5",
+          "PetzGo.Agendamento.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PetzGo.Agendamento.Aplicacao.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetzGo.Agendamento.Aplicacao.dll": {}
+        }
+      },
+      "PetzGo.Agendamento.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "PetzGo.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PetzGo.Agendamento.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetzGo.Agendamento.Dominio.dll": {}
+        }
+      },
       "PetzGo.Cadastros.Aplicacao/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6102,6 +6129,16 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "PetzGo.Agendamento.Aplicacao/1.0.0": {
+      "type": "project",
+      "path": "../PetzGo.Agendamento.Aplicacao/PetzGo.Agendamento.Aplicacao.csproj",
+      "msbuildProject": "../PetzGo.Agendamento.Aplicacao/PetzGo.Agendamento.Aplicacao.csproj"
+    },
+    "PetzGo.Agendamento.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../PetzGo.Agendamento.Dominio/PetzGo.Agendamento.Dominio.csproj",
+      "msbuildProject": "../PetzGo.Agendamento.Dominio/PetzGo.Agendamento.Dominio.csproj"
+    },
     "PetzGo.Cadastros.Aplicacao/1.0.0": {
       "type": "project",
       "path": "../PetzGo.Cadastros.Aplicacao/PetzGo.Cadastros.Aplicacao.csproj",
@@ -6145,6 +6182,7 @@
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.9",
+      "PetzGo.Agendamento.Aplicacao >= 1.0.0",
       "PetzGo.Cadastros.Aplicacao >= 1.0.0",
       "PetzGo.Cadastros.Infra >= 1.0.0",
       "PetzGo.ControleAcesso.Aplicacao >= 1.0.0",
@@ -6181,6 +6219,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Agendamento.Aplicacao\\PetzGo.Agendamento.Aplicacao.csproj": {
+              "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Agendamento.Aplicacao\\PetzGo.Agendamento.Aplicacao.csproj"
+            },
             "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Aplicacao\\PetzGo.Cadastros.Aplicacao.csproj": {
               "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Aplicacao\\PetzGo.Cadastros.Aplicacao.csproj"
             },

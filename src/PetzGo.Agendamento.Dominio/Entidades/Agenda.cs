@@ -2,7 +2,6 @@
 using PetzGo.Agendamento.Dominio.Enums;
 using PetzGo.Core.DominioBase;
 
-
 namespace PetzGo.Agendamento.Dominio.Entidades
 {
     public class Agenda : Entidade, IRaizAgregacao
