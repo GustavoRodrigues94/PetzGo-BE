@@ -43,9 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetzGo.Agendamento.Dominio.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetzGo.Agendamento.Dominio", "src\PetzGo.Agendamento.Dominio\PetzGo.Agendamento.Dominio.csproj", "{5594DC0A-6190-4E12-A6F4-0FEFBAEEF966}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetzGo.Agendamento.Aplicacao", "src\PetzGo.Agendamento.Aplicacao\PetzGo.Agendamento.Aplicacao.csproj", "{D1E8A547-DC29-4BD2-8B86-6583E313E158}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetzGo.Agendamento.Aplicacao", "src\PetzGo.Agendamento.Aplicacao\PetzGo.Agendamento.Aplicacao.csproj", "{D1E8A547-DC29-4BD2-8B86-6583E313E158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetzGo.Agendamento.Infra", "src\PetzGo.Agendamento.Infra\PetzGo.Agendamento.Infra.csproj", "{3380D184-A578-4629-9FDF-494EBC867CCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetzGo.Agendamento.Infra", "src\PetzGo.Agendamento.Infra\PetzGo.Agendamento.Infra.csproj", "{3380D184-A578-4629-9FDF-494EBC867CCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetzGo.API.Testes", "tests\PetzGo.API.Testes\PetzGo.API.Testes.csproj", "{BBCFD72F-B2A5-436A-9159-EACA4EF1ACBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,10 @@ Global
 		{3380D184-A578-4629-9FDF-494EBC867CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3380D184-A578-4629-9FDF-494EBC867CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3380D184-A578-4629-9FDF-494EBC867CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBCFD72F-B2A5-436A-9159-EACA4EF1ACBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCFD72F-B2A5-436A-9159-EACA4EF1ACBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCFD72F-B2A5-436A-9159-EACA4EF1ACBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCFD72F-B2A5-436A-9159-EACA4EF1ACBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,6 +140,7 @@ Global
 		{5594DC0A-6190-4E12-A6F4-0FEFBAEEF966} = {5FD86564-41A9-444D-B597-B21093FA4363}
 		{D1E8A547-DC29-4BD2-8B86-6583E313E158} = {5FD86564-41A9-444D-B597-B21093FA4363}
 		{3380D184-A578-4629-9FDF-494EBC867CCF} = {5FD86564-41A9-444D-B597-B21093FA4363}
+		{BBCFD72F-B2A5-436A-9159-EACA4EF1ACBE} = {92103557-521A-47D7-B90C-AF9D9152183C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D9EA351-0AA2-4009-86A6-C2A23C44BD85}

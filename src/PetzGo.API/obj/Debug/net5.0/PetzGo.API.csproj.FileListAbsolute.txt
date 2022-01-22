@@ -94,3 +94,5 @@ C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\PetzGo.Agendamento.Apli
 C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\PetzGo.Agendamento.Dominio.dll
 C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\PetzGo.Agendamento.Aplicacao.pdb
 C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\PetzGo.Agendamento.Dominio.pdb
+C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\appsettings.Testing.Development.json
+C:\PetzGo\backend\PetzGo\src\PetzGo.API\bin\Debug\net5.0\appsettings.Testing.json
