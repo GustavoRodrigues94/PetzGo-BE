@@ -9,5 +9,7 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas
         public string Nome { get; set; }
         public Guid IdPetCaracteristica { get; set; }
         public TipoPetEnum TipoPet { get; set; }
+        public string PetCaracteristica { get; set; }
+        public string TipoPetDescricao { get; set; }
     }
 }

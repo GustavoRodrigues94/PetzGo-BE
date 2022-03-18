@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Agendamento.Aplicacao\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -77,6 +80,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Agendamento.Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -135,6 +141,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -244,6 +253,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Aplicacao\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -319,6 +331,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -377,6 +392,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -455,6 +473,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Aplicacao\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -525,6 +546,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -592,6 +616,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -667,6 +694,9 @@
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
         "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

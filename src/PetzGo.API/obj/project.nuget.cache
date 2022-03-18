@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "34sAGPGLRSuZUWkFQdGwQPQKwz/nE6InRdw9X1YP9cjYHBVgIs3jOgBIfBPOl3z1icgv+RnKLa53w2cr8IKH+A==",
+  "dgSpecHash": "tqCcd9s27PB25XIaZJZ6VUzCX2ODxikl04v1Ykj0ZDPGXkQd6487pNIyOlZ6k4ouFPpFHBD3oRYHtf+dD+t1xg==",
   "success": true,
   "projectFilePath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.API\\PetzGo.API.csproj",
   "expectedPackageFiles": [

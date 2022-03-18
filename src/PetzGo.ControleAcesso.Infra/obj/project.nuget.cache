@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c85hqgYC91vInGCljwmWkztjbZp97baXzYjmymUmMyEsMd9OUlyYPkCqDEB8WDhWoR4Jj957ocEBEDHERs99FA==",
+  "dgSpecHash": "9e2S1ZtMgAYBzi2V2EVbcMwitMC3RRrCKxJer33s2TIL73IUcaRDkLq4i4JRkpFd2aVdrV9nZtEGdAts4lVvtg==",
   "success": true,
   "projectFilePath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Infra\\PetzGo.ControleAcesso.Infra.csproj",
   "expectedPackageFiles": [

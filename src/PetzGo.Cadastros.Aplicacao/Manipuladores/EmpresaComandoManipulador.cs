@@ -10,7 +10,8 @@ using PetzGo.Core.Utilitarios.MensagensPadrao;
 namespace PetzGo.Cadastros.Aplicacao.Manipuladores
 {
     public class EmpresaComandoManipulador : Notifiable,
-    IComandoManipulador<CriarEmpresaComando>
+    IComandoManipulador<CriarEmpresaComando>,
+    IComandoManipulador<CompletarCadastroServicoEmpresaComando>
     {
         private readonly IEmpresaRepositorio _empresaRepositorio;
 
@@ -43,6 +44,24 @@ namespace PetzGo.Cadastros.Aplicacao.Manipuladores
             var commitou = await _empresaRepositorio.UnidadeDeTrabalho.Commit();
             return commitou 
                 ? new ComandoResultado(true, "Sucesso ao criar empresa.", empresa) 
+                : new ComandoResultado(false, "Ocorreu um erro ao criar empresa.", null);
+        }
+
+        public async Task<ComandoResultado> Manipular(CompletarCadastroServicoEmpresaComando comando)
+        {
+            comando.Validar();
+            if (comando.Invalid)
+                return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
+
+            var servicoPetCaracteristica =
+                await _empresaRepositorio.ObterServicoEmpresaPetCaracteristica(comando.EmpresaId, comando.EmpresaId,
+                    comando.PetId);
+
+
+
+            var commitou = await _empresaRepositorio.UnidadeDeTrabalho.Commit();
+            return commitou
+                ? new ComandoResultado(true, "Sucesso ao completar cadastro serviço empresa", servicoPetCaracteristica)
                 : new ComandoResultado(false, "Ocorreu um erro ao criar empresa.", null);
         }
     }

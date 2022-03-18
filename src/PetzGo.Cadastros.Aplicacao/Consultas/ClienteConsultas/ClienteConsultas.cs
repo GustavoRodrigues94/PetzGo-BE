@@ -54,7 +54,8 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas
                         Id = cliente.Pet.Id,
                         IdPetCaracteristica = cliente.Pet.PetCaracteristicaId,
                         Nome = cliente.Pet.Nome,
-                        TipoPet = cliente.Pet.TipoPet
+                        TipoPet = cliente.Pet.TipoPet,
+                        TipoPetDescricao = cliente.Pet.TipoPet.ObterDescricaoEnum()
                     }
                 }).FirstOrDefaultAsync();
 
@@ -80,7 +81,9 @@ namespace PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas
                         Id = cliente.Pet.Id,
                         IdPetCaracteristica = cliente.Pet.PetCaracteristicaId,
                         Nome = cliente.Pet.Nome,
-                        TipoPet = cliente.Pet.TipoPet
+                        TipoPet = cliente.Pet.TipoPet,
+                        TipoPetDescricao = cliente.Pet.TipoPet.ObterDescricaoEnum(),
+                        PetCaracteristica = cliente.Pet.PetCaracteristica.TipoPetCaracteristica.ObterDescricaoEnum()
                     }
                 }).FirstOrDefaultAsync();
     }
