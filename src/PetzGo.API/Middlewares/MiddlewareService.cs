@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using PetzGo.Agendamento.Aplicacao.Manipuladores;
+using PetzGo.Agendamento.Dominio.Repositorios;
+using PetzGo.Agendamento.Infra.Repositorios;
 using PetzGo.Cadastros.Aplicacao.Consultas.ClienteConsultas;
 using PetzGo.Cadastros.Aplicacao.Consultas.EmpresaConsultas;
 using PetzGo.Cadastros.Aplicacao.Manipuladores;
@@ -70,7 +73,12 @@ namespace PetzGo.API.Middlewares
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddScoped<ControleAcessoComandoManipulador, ControleAcessoComandoManipulador>();
 
+            services.AddScoped<IAgendaRepositorio, AgendaRepositorio>();
+            services.AddScoped<AgendamentoComandoManipulador, AgendamentoComandoManipulador>();
+
             services.AddScoped<INotificationHandler<EmpresaAdicionadaEvento>, ControleAcessoEventoManipulador>();
+            services.AddScoped<INotificationHandler<AgendamentoIniciadoEvento>, EmpresaEventoManipulador>();
+            services.AddScoped<INotificationHandler<ServicoPetCaracteristicaAdicionadoEvento>, AgendamentoEventoManipulador>();
         }
     }
 }

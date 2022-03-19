@@ -37,12 +37,15 @@ namespace PetzGo.Cadastros.Infra.Repositorios
 
         public async Task<EmpresaServico> ObterServicoEmpresaPetCaracteristica(Guid empresaId, Guid servicoId, Guid petCaracteristicaId) =>
             await _contexto.EmpresaServico
-                .AsNoTrackingWithIdentityResolution()
                 .Include(x => x.ServicoPetCaracteristica)
                 .Where(x => x.EmpresaId == empresaId)
                 .Where(x => x.ServicoPetCaracteristica.ServicoId == servicoId)
                 .Where(x => x.ServicoPetCaracteristica.PetCaracteristicaId == petCaracteristicaId)
                 .FirstOrDefaultAsync();
+
+        public Task<Servico> ObterServicoPorId(Guid servicoId) => _contexto.Servico
+            .AsNoTrackingWithIdentityResolution()
+            .FirstOrDefaultAsync(x => x.Id == servicoId);
 
         public IQueryable<ServicoPetCaracteristica> ObterPetCaracteristicasPorServicoId(Guid servicoId) =>
             _contexto.ServicoPetCaracteristicas
@@ -67,7 +70,24 @@ namespace PetzGo.Cadastros.Infra.Repositorios
         public async Task<Empresa> ObterEmpresaPorCNPJ(string CNPJ) =>
             await _contexto.Empresa.FirstOrDefaultAsync(x => x.CNPJ == CNPJ);
 
+        public async Task<Empresa> ObterEmpresaPorId(Guid empresaId) => await _contexto.Empresa
+            .AsNoTrackingWithIdentityResolution()
+            .FirstOrDefaultAsync(x => x.Id == empresaId);
+
+        public async Task<Cliente> ObterClientePetPorEmpresaId(Guid empresaId, Guid clienteId, Guid petId) =>
+            await _contexto.Cliente
+                .AsNoTrackingWithIdentityResolution()
+                .Include(c => c.Empresa)
+                .Include(c => c.Pet).ThenInclude(p => p.PetCaracteristica)
+                .Where(x => x.EmpresaId == empresaId)
+                .Where(x => x.Id == clienteId)
+                .Where(x => x.Pet.Id == petId)
+                .FirstOrDefaultAsync();
+
         public void AdicionarEmpresa(Empresa empresa) => _contexto.Empresa.Add(empresa);
+
+        public void AdicionarEmpresaServico(EmpresaServico empresaServico) =>
+            _contexto.EmpresaServico.Add(empresaServico);
 
         public void Dispose() => _contexto?.Dispose();
     }

@@ -269,11 +269,11 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/5.0.9": {
+      "Microsoft.EntityFrameworkCore/5.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.9",
-          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.9",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.13",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.13",
           "Microsoft.Extensions.Caching.Memory": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -288,7 +288,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/5.0.9": {
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.13": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -297,7 +297,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.9": {
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.13": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -323,10 +323,10 @@
           "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/5.0.9": {
+      "Microsoft.EntityFrameworkCore.Relational/5.0.13": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.9",
+          "Microsoft.EntityFrameworkCore": "5.0.13",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
         },
         "compile": {
@@ -1698,6 +1698,23 @@
           "bin/placeholder/PetzGo.Agendamento.Dominio.dll": {}
         }
       },
+      "PetzGo.Agendamento.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.13",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13",
+          "PetzGo.Agendamento.Dominio": "1.0.0",
+          "PetzGo.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PetzGo.Agendamento.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetzGo.Agendamento.Infra.dll": {}
+        }
+      },
       "PetzGo.Cadastros.Aplicacao/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2200,45 +2217,45 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb"
       ]
     },
-    "Microsoft.EntityFrameworkCore/5.0.9": {
-      "sha512": "mA+W/zpJZMp802xt2D+qBXrme4VFN+FlsrHdU6WG5HKDAnezClRksJhJicUR8XojnSPp9SgZKa1aIAasB5G67g==",
+    "Microsoft.EntityFrameworkCore/5.0.13": {
+      "sha512": "Q5dVSbK5Id01xuAvm2xzrzEUNgO0fFD8mD/qFkD2F4Q23rs5YnrHH+/Wr9PAGNLdKqYWmkB0yTxKBL/0nLgr3g==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/5.0.9",
+      "path": "microsoft.entityframeworkcore/5.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
+        "microsoft.entityframeworkcore.5.0.13.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/5.0.9": {
-      "sha512": "csbpDaXe9iQUkvDS3JZRAFfkgcRA7BlHE3u8feBLlYervmTAS1WIWPBZKMtH0a2GO5njwAABU3j+hZMCPYBrzQ==",
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.13": {
+      "sha512": "TdnEXtDpm3o9s6RzUX0Mjgfgms4BD04uyvyxM9Xg8tQPOqqh7ZO6fWy+xJTj+wTcYuY5pYSkfPNGvtJ5FRmqWQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/5.0.9",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.5.0.13.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.9": {
-      "sha512": "eyuPLRFjcF7VWH8qy1uUuMrO02W15n9EXAXnYjCTWgH0SDIeZAa2XZXMZ9U3dvOPtvllMBy0obYA5SSbnpaNoQ==",
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.13": {
+      "sha512": "torTg+dQC/vOlFI5FZsRmOAA5pKtr8cJNJ5SWsl0RVYmhb5I7s/V3T1NsIzSqJTYzGBssHl5mFbiBODeBdQpnQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.9",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.9.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.5.0.13.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -2257,17 +2274,17 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/5.0.9": {
-      "sha512": "rGXoju3HtnxtdYlH7/lOyVlKJ9fZSwORukVCN250Aub2gx9bEmfXlDHeM9Gw9bkeunLEx3OoqL6DAz9VW8YTJA==",
+    "Microsoft.EntityFrameworkCore.Relational/5.0.13": {
+      "sha512": "Qs7N0HFemByf04PZHvn2ZFytveLZyZKCmuNcMus1f53uNarypvWifrOC7L/wYylm/j8vs3qcc7jgb/yox1sbtg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/5.0.9",
+      "path": "microsoft.entityframeworkcore.relational/5.0.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.5.0.9.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.5.0.13.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
@@ -6139,6 +6156,11 @@
       "path": "../PetzGo.Agendamento.Dominio/PetzGo.Agendamento.Dominio.csproj",
       "msbuildProject": "../PetzGo.Agendamento.Dominio/PetzGo.Agendamento.Dominio.csproj"
     },
+    "PetzGo.Agendamento.Infra/1.0.0": {
+      "type": "project",
+      "path": "../PetzGo.Agendamento.Infra/PetzGo.Agendamento.Infra.csproj",
+      "msbuildProject": "../PetzGo.Agendamento.Infra/PetzGo.Agendamento.Infra.csproj"
+    },
     "PetzGo.Cadastros.Aplicacao/1.0.0": {
       "type": "project",
       "path": "../PetzGo.Cadastros.Aplicacao/PetzGo.Cadastros.Aplicacao.csproj",
@@ -6183,6 +6205,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.9",
       "PetzGo.Agendamento.Aplicacao >= 1.0.0",
+      "PetzGo.Agendamento.Infra >= 1.0.0",
       "PetzGo.Cadastros.Aplicacao >= 1.0.0",
       "PetzGo.Cadastros.Infra >= 1.0.0",
       "PetzGo.ControleAcesso.Aplicacao >= 1.0.0",
@@ -6225,6 +6248,9 @@
           "projectReferences": {
             "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Agendamento.Aplicacao\\PetzGo.Agendamento.Aplicacao.csproj": {
               "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Agendamento.Aplicacao\\PetzGo.Agendamento.Aplicacao.csproj"
+            },
+            "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Agendamento.Infra\\PetzGo.Agendamento.Infra.csproj": {
+              "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Agendamento.Infra\\PetzGo.Agendamento.Infra.csproj"
             },
             "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Aplicacao\\PetzGo.Cadastros.Aplicacao.csproj": {
               "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Aplicacao\\PetzGo.Cadastros.Aplicacao.csproj"
@@ -6307,5 +6333,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.SqlServer from 5.0.13 to 5.0.9. Reference the package directly from the project to select a different version. \r\n PetzGo.API -> PetzGo.Agendamento.Infra -> Microsoft.EntityFrameworkCore.SqlServer (>= 5.0.13) \r\n PetzGo.API -> Microsoft.EntityFrameworkCore.SqlServer (>= 5.0.9)",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

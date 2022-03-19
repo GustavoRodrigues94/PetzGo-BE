@@ -1,10 +1,13 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using Flunt.Notifications;
 using PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos;
 using PetzGo.Cadastros.Dominio.Entidades;
 using PetzGo.Cadastros.Dominio.Repositorios;
 using PetzGo.Core.Mensagens.Comandos;
 using PetzGo.Core.Mensagens.EventoIntegracao;
+using PetzGo.Core.Mensagens.EventoIntegracao.DTOs.ServicoPetCaracteristicaAdicionadoEventoDTO;
+using PetzGo.Core.Utilitarios.Conversores;
 using PetzGo.Core.Utilitarios.MensagensPadrao;
 
 namespace PetzGo.Cadastros.Aplicacao.Manipuladores
@@ -53,16 +56,35 @@ namespace PetzGo.Cadastros.Aplicacao.Manipuladores
             if (comando.Invalid)
                 return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
 
-            var servicoPetCaracteristica =
-                await _empresaRepositorio.ObterServicoEmpresaPetCaracteristica(comando.EmpresaId, comando.EmpresaId,
-                    comando.PetId);
+            var empresa = await _empresaRepositorio.ObterEmpresaPorId(comando.EmpresaId);
+            var cliente = await _empresaRepositorio.ObterClientePetPorEmpresaId(comando.EmpresaId, comando.ClienteId, comando.PetId);
+            var servico = await _empresaRepositorio.ObterServicoPorId(comando.ServicoId);
 
+            var empresaServico = await _empresaRepositorio.ObterServicoEmpresaPetCaracteristica(
+                comando.EmpresaId,
+                comando.ServicoId,
+                cliente.Pet.PetCaracteristicaId);
 
+            if (empresaServico is null)
+            {
+                empresa.AdicionarEmpresaServico(empresa.Id, cliente.Pet.PetCaracteristicaId, cliente.Pet.TipoPet,
+                    comando.ValorServico, comando.TempoEmMinutos);
+
+                _empresaRepositorio.AdicionarEmpresaServico(empresa.EmpresaServicos.FirstOrDefault());
+            }
+
+            empresa.AdicionarEvento(new ServicoPetCaracteristicaAdicionadoEvento(comando.AgendaId, comando.EmpresaId,
+                new AgendaPetDTOEventoIntegracao(cliente.Nome,
+                    cliente.Pet.PetCaracteristica.TipoPetCaracteristica.ObterDescricaoEnum(),
+                    cliente.Pet.TipoPet.ObterDescricaoEnum()),
+                new AgendaClienteDTOEventoIntegracao(cliente.Nome),
+                new AgendaServicoDTOEventoIntegracao(servico.Nome, comando.ValorServico, comando.TempoEmMinutos)));
 
             var commitou = await _empresaRepositorio.UnidadeDeTrabalho.Commit();
             return commitou
-                ? new ComandoResultado(true, "Sucesso ao completar cadastro serviço empresa", servicoPetCaracteristica)
-                : new ComandoResultado(false, "Ocorreu um erro ao criar empresa.", null);
+                ? new ComandoResultado(true, "Sucesso ao completar cadastro serviço empresa",
+                    empresaServico ?? empresa.EmpresaServicos.FirstOrDefault())
+                : new ComandoResultado(false, "Ocorreu um erro ao cadastrar serviço empresa", null);
         }
     }
 }

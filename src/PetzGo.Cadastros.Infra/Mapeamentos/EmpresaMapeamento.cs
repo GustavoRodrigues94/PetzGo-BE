@@ -17,6 +17,7 @@ namespace PetzGo.Cadastros.Infra.Mapeamentos
             builder.HasOne(e => e.Endereco).WithOne(en => en.Empresa).HasForeignKey<Empresa>(e => e.EnderecoId);
             builder.HasMany(e => e.EmpresaServicos).WithOne(es => es.Empresa).HasForeignKey(es => es.EmpresaId);
             builder.HasMany(e => e.EmpresaHorarios).WithOne(eh => eh.Empresa).HasForeignKey(eh => eh.EmpresaId);
+            builder.HasMany(e => e.EmpresaClientes).WithOne(ec => ec.Empresa).HasForeignKey(ec => ec.EmpresaId);
         }
     }
 }

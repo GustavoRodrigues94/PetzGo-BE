@@ -20,6 +20,7 @@ namespace PetzGo.Cadastros.Aplicacao.Manipuladores
         {
             await _empresaComandoManipulador.Manipular(
                 new CompletarCadastroServicoEmpresaComando(
+                    evento.AgregacaoId,
                     evento.EmpresaId,
                     evento.PetId,
                     evento.ClienteId,

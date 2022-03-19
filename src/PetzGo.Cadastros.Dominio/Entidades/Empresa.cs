@@ -17,6 +17,7 @@ namespace PetzGo.Cadastros.Dominio.Entidades
             WhatsApp = whatsApp;
             _empresaServicos = new List<EmpresaServico>();
             _empresaHorarios = new List<EmpresaHorario>();
+            _empresaClientes = new List<Cliente>();
         }
 
         public Guid TipoNegocioId { get; private set; }
@@ -34,6 +35,9 @@ namespace PetzGo.Cadastros.Dominio.Entidades
 
         private readonly List<EmpresaHorario> _empresaHorarios;
         public IEnumerable<EmpresaHorario> EmpresaHorarios => _empresaHorarios;
+
+        private readonly List<Cliente> _empresaClientes;
+        public IEnumerable<Cliente> EmpresaClientes => _empresaClientes;
 
         public void AdicionarEndereco(string cep, string logradouro, string numero, string bairro, string complemento, string cidade, string estado)
         {

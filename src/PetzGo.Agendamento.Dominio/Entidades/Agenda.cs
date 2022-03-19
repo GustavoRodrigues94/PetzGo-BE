@@ -23,13 +23,13 @@ namespace PetzGo.Agendamento.Dominio.Entidades
         public decimal ValorTotal { get; private set; }
         public AgendamentoStatusEnum AgendamentoStatus { get; private set; }
 
-        public Guid AgendaClienteId { get; private set; }
+        public Guid? AgendaClienteId { get; private set; }
         public AgendaCliente AgendaCliente { get; private set; }
 
-        public Guid AgendaPetId { get; private set; }
+        public Guid? AgendaPetId { get; private set; }
         public AgendaPet AgendaPet { get; private set; }
 
-        public Guid AgendaServicoId { get; private set; }
+        public Guid? AgendaServicoId { get; private set; }
         public AgendaServico AgendaServico { get; private set; }
 
         public DateTime DataHoraInicio { get; private set; }

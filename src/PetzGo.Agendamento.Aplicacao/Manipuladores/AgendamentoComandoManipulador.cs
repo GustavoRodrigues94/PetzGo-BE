@@ -10,7 +10,8 @@ using PetzGo.Core.Mensagens.EventoIntegracao;
 namespace PetzGo.Agendamento.Aplicacao.Manipuladores
 {
     public class AgendamentoComandoManipulador : Notifiable,
-        IComandoManipulador<IniciarAgendamentoComando>
+        IComandoManipulador<IniciarAgendamentoComando>,
+        IComandoManipulador<FinalizarAgendamentoComando>
     {
         private readonly IAgendaRepositorio _agendaRepositorio;
 
@@ -36,6 +37,13 @@ namespace PetzGo.Agendamento.Aplicacao.Manipuladores
             return commitou
                 ? new ComandoResultado(true, "Sucesso ao adicionar agendamento", agenda)
                 : new ComandoResultado(false, "Ocorreu um erro ao adicionar agendamento", null);
+        }
+
+        public Task<ComandoResultado> Manipular(FinalizarAgendamentoComando comando)
+        {
+            //TODO VALIDAR e Finalizar Fluxo agendamento
+            
+
         }
     }
 }

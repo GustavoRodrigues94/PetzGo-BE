@@ -16,4 +16,10 @@
     <ProjectReference Include="..\PetzGo.Agendamento.Dominio\PetzGo.Agendamento.Dominio.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="MediatR">
+      <HintPath>..\..\..\..\..\Users\Gustavo\.nuget\packages\mediatr\9.0.0\lib\netstandard2.1\MediatR.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -13,6 +13,7 @@ namespace PetzGo.Cadastros.Dominio.Repositorios
 
         IQueryable<Servico> ObterServicos();
         Task<EmpresaServico> ObterServicoEmpresaPetCaracteristica(Guid empresaId, Guid servicoId, Guid petCaracteristicaId);
+        Task<Servico> ObterServicoPorId(Guid servicoId);
 
         IQueryable<ServicoPetCaracteristica> ObterPetCaracteristicasPorServicoId(Guid servicoId);
         IQueryable<PetCaracteristica> ObterPetCaracteristicas();
@@ -20,7 +21,12 @@ namespace PetzGo.Cadastros.Dominio.Repositorios
         IQueryable<DiaSemana> ObterDiasSemana();
 
         Task<Empresa> ObterEmpresaPorCNPJ(string CNPJ);
+        Task<Empresa> ObterEmpresaPorId(Guid empresaId);
+
+        Task<Cliente> ObterClientePetPorEmpresaId(Guid empresaId, Guid clienteId, Guid petId);
 
         void AdicionarEmpresa(Empresa empresa);
+
+        void AdicionarEmpresaServico(EmpresaServico empresaServico);
     }
 }

@@ -7,9 +7,10 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos
 {
     public class CompletarCadastroServicoEmpresaComando : Notifiable, IComando
     {
-        public CompletarCadastroServicoEmpresaComando(Guid empresaId, Guid petId, Guid clienteId, Guid servicoId,
+        public CompletarCadastroServicoEmpresaComando(Guid agendaId, Guid empresaId, Guid petId, Guid clienteId, Guid servicoId,
             decimal valorServico, int tempoEmMinutos)
         {
+            AgendaId = agendaId;
             EmpresaId = empresaId;
             PetId = petId;
             ClienteId = clienteId;
@@ -18,6 +19,7 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos
             TempoEmMinutos = tempoEmMinutos;
         }
 
+        public Guid AgendaId { get; private set; }
         public Guid EmpresaId { get; private set; }
         public Guid PetId { get; private set; }
         public Guid ClienteId { get; private set; }
