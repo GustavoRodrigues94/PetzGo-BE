@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace PetzGo.Core.Mensagens.EventoIntegracao.DTOs.ServicoPetCaracteristicaAdicionadoEventoDTO
+﻿namespace PetzGo.Core.Mensagens.EventoIntegracao.DTOs.ServicoPetCaracteristicaAdicionadoEventoDTO
 {
     public class AgendaPetDTOEventoIntegracao
     {

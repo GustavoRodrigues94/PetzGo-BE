@@ -39,11 +39,27 @@ namespace PetzGo.Agendamento.Aplicacao.Manipuladores
                 : new ComandoResultado(false, "Ocorreu um erro ao adicionar agendamento", null);
         }
 
-        public Task<ComandoResultado> Manipular(FinalizarAgendamentoComando comando)
+        public async Task<ComandoResultado> Manipular(FinalizarAgendamentoComando comando)
         {
-            //TODO VALIDAR e Finalizar Fluxo agendamento
-            
+            comando.Validar();
+            if (comando.Invalid)
+                return new ComandoResultado(false, RetornoComando.MensagemComandoInvalido(comando), comando.Notifications);
 
+            var agendamento = await _agendaRepositorio.ObterAgendamentoPorId(comando.AgendaId);
+            if(agendamento is null)
+                return new ComandoResultado(false, "Agendamento não encontrado", null);
+
+            var agendaParaFinalizar = Agenda.AgendaFactory.FinalizarAgendamentoIniciado(agendamento,
+                new AgendaCliente(agendamento.Id, comando.NomeCliente),
+                new AgendaPet(agendamento.Id, comando.NomePet, comando.TipoPetCaracteristica, comando.TipoPet),
+                new AgendaServico(agendamento.Id, comando.NomeServico, comando.ValorServico, comando.TempoEmMinutosServico));
+
+            _agendaRepositorio.AtualizarAgendamento(agendaParaFinalizar);
+
+            var commitou = await _agendaRepositorio.UnidadeDeTrabalho.Commit();
+            return commitou
+                ? new ComandoResultado(true, "Sucesso ao finalizar agendamento", agendamento)
+                : new ComandoResultado(false, "Ocorreu um erro ao finalizar agendamento", null);
         }
     }
 }

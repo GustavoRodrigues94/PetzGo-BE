@@ -6,7 +6,7 @@ namespace PetzGo.Agendamento.Dominio.Entidades
 {
     public class AgendaPet : Entidade
     {
-        public AgendaPet(Guid agendaId, string nome, PetCaracteristicaEnum petCaracteristica, TipoPetEnum tipoPet)
+        public AgendaPet(Guid agendaId, string nome, string petCaracteristica, string tipoPet)
         {
             AgendaId = agendaId;
             Nome = nome;
@@ -18,7 +18,7 @@ namespace PetzGo.Agendamento.Dominio.Entidades
         public Agenda Agenda { get; private set; }
 
         public string Nome { get; private set; }
-        public PetCaracteristicaEnum PetCaracteristica { get; private set; }
-        public TipoPetEnum TipoPet { get; private set; }
+        public string PetCaracteristica { get; private set; }
+        public string TipoPet { get; private set; }
     }
 }

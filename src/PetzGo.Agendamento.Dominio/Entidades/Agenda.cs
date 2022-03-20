@@ -16,6 +16,12 @@ namespace PetzGo.Agendamento.Dominio.Entidades
                 agenda.IniciarAgendamento(empresaId, dataHoraInicio, tempoEmMinutos);
                 return agenda;
             }
+
+            public static Agenda FinalizarAgendamentoIniciado(Agenda agendamentoIniciado, AgendaCliente agendaCliente, AgendaPet agendaPet, AgendaServico agendaServico)
+            {
+                agendamentoIniciado.FinalizarAgendamento(agendaCliente, agendaPet, agendaServico);
+                return agendamentoIniciado;
+            }
         }
 
         public Guid EmpresaId { get; private set; }
@@ -70,5 +76,11 @@ namespace PetzGo.Agendamento.Dominio.Entidades
 
         private static DateTime CalcularDataHoraTermino(DateTime dataHoraInicio, int tempoEmMinutos) =>
             dataHoraInicio.AddMinutes(tempoEmMinutos);
+
+        private void FinalizarAgendamento(AgendaCliente agendaCliente, AgendaPet agendaPet, AgendaServico agendaServico)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

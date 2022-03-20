@@ -1,5 +1,6 @@
 ﻿using System;
 using Flunt.Notifications;
+using Flunt.Validations;
 using PetzGo.Core.Mensagens.Comandos;
 
 namespace PetzGo.Agendamento.Aplicacao.Comandos
@@ -28,5 +29,9 @@ namespace PetzGo.Agendamento.Aplicacao.Comandos
         public string NomeServico { get; private set; }
         public decimal ValorServico { get; private set; }
         public int TempoEmMinutosServico { get; private set; }
+
+        public void Validar() => AddNotifications(new Contract()
+            .IsNotEmpty(AgendaId, "AgendaId", "Campo obrigatório.")
+        );
     }
 }
