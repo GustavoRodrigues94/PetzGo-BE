@@ -54,6 +54,9 @@ namespace PetzGo.Agendamento.Aplicacao.Manipuladores
                 comando.NomePet, comando.TipoPet, comando.TipoPetCaracteristica,
                 comando.NomeServico, comando.ValorServico, comando.TempoEmMinutosServico);
 
+            _agendaRepositorio.AdicionarClienteAgendamento(agendaParaFinalizar.AgendaCliente);
+            _agendaRepositorio.AdicionarPetAgendamento(agendaParaFinalizar.AgendaPet);
+            _agendaRepositorio.AdicionarServicoAgendamento(agendaParaFinalizar.AgendaServico);
             _agendaRepositorio.AtualizarAgendamento(agendaParaFinalizar);
 
             var commitou = await _agendaRepositorio.UnidadeDeTrabalho.Commit();

@@ -7,7 +7,10 @@ namespace PetzGo.Cadastros.Dominio.Entidades
 {
     public class Empresa : Entidade, IRaizAgregacao
     {
-        protected Empresa() { }
+        protected Empresa()
+        {
+            _empresaServicos = new List<EmpresaServico>();
+        }
 
         public Empresa(Guid tipoNegocioId, string nomeFantasia, string cnpj, string whatsApp)
         {

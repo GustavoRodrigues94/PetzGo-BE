@@ -67,14 +67,20 @@ namespace PetzGo.Cadastros.Aplicacao.Manipuladores
 
             if (empresaServico is null)
             {
-                empresa.AdicionarEmpresaServico(empresa.Id, cliente.Pet.PetCaracteristicaId, cliente.Pet.TipoPet,
+                var servicoPetCaracteristica =
+                    await _empresaRepositorio.ObterServicoPetCaracteristica(comando.ServicoId,
+                        cliente.Pet.PetCaracteristicaId);
+
+                empresa.AdicionarEmpresaServico(empresa.Id, servicoPetCaracteristica.Id, cliente.Pet.TipoPet,
                     comando.ValorServico, comando.TempoEmMinutos);
 
-                _empresaRepositorio.AdicionarEmpresaServico(empresa.EmpresaServicos.FirstOrDefault());
+                empresaServico = empresa.EmpresaServicos.FirstOrDefault();
+
+                _empresaRepositorio.AdicionarEmpresaServico(empresaServico);
             }
 
-            empresa.AdicionarEvento(new ServicoPetCaracteristicaAdicionadoEvento(comando.AgendaId, comando.EmpresaId,
-                new AgendaPetDTOEventoIntegracao(cliente.Nome,
+            empresaServico?.AdicionarEvento(new ServicoPetCaracteristicaAdicionadoEvento(comando.AgendaId, comando.EmpresaId,
+                new AgendaPetDTOEventoIntegracao(cliente.Pet.Nome,
                     cliente.Pet.PetCaracteristica.TipoPetCaracteristica.ObterDescricaoEnum(),
                     cliente.Pet.TipoPet.ObterDescricaoEnum()),
                 new AgendaClienteDTOEventoIntegracao(cliente.Nome),

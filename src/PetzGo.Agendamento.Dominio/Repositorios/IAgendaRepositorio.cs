@@ -11,5 +11,8 @@ namespace PetzGo.Agendamento.Dominio.Repositorios
 
         void AdicionarAgendamento(Agenda agenda);
         void AtualizarAgendamento(Agenda agenda);
+        void AdicionarClienteAgendamento(AgendaCliente agendaCliente);
+        void AdicionarPetAgendamento(AgendaPet agendaPet);
+        void AdicionarServicoAgendamento(AgendaServico agendaServico);
     }
 }

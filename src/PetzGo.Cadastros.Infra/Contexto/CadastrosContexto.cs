@@ -37,7 +37,7 @@ namespace PetzGo.Cadastros.Infra.Contexto
             try
             {
                 var sucesso = await base.SaveChangesAsync() > 0;
-                if (sucesso) await _mediatorManipulador.PublicarEventos(this);
+                await _mediatorManipulador.PublicarEventos(this);
 
                 return sucesso;
             }

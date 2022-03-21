@@ -84,6 +84,15 @@ namespace PetzGo.Cadastros.Infra.Repositorios
                 .Where(x => x.Pet.Id == petId)
                 .FirstOrDefaultAsync();
 
+        public async Task<ServicoPetCaracteristica> ObterServicoPetCaracteristica(Guid servicoId, Guid petPetCaracteristicaId) =>
+            await _contexto.ServicoPetCaracteristicas
+                .AsNoTrackingWithIdentityResolution()
+                .Include(x => x.PetCaracteristica)
+                .Include(x => x.Servico)
+                .Where(x => x.ServicoId == servicoId)
+                .Where(x => x.PetCaracteristicaId == petPetCaracteristicaId)
+                .FirstOrDefaultAsync();
+
         public void AdicionarEmpresa(Empresa empresa) => _contexto.Empresa.Add(empresa);
 
         public void AdicionarEmpresaServico(EmpresaServico empresaServico) =>

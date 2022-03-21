@@ -32,8 +32,8 @@ namespace PetzGo.Cadastros.Aplicacao.Comandos.EmpresaComandos
             .IsNotEmpty(PetId, "PetId", "Campo obrigatório.")
             .IsNotEmpty(ClienteId, "ClienteId", "Campo obrigatório.")
             .IsNotEmpty(ServicoId, "ServicoId", "Campo obrigatório.")
-            .IsGreaterThan(0, ValorServico, "ValorServico", "Campo deve ser maior que 0")
-            .IsGreaterThan(5, TempoEmMinutos, "TempoEmMinutos", "Campo deve ser maior que 5")
+            .IsGreaterThan(ValorServico,0 , "ValorServico", "Campo deve ser maior que 0")
+            .IsGreaterThan(TempoEmMinutos,5, "TempoEmMinutos", "Campo deve ser maior que 5")
         );
     }
 }

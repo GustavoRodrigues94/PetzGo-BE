@@ -17,6 +17,7 @@ namespace PetzGo.Cadastros.Dominio.Repositorios
 
         IQueryable<ServicoPetCaracteristica> ObterPetCaracteristicasPorServicoId(Guid servicoId);
         IQueryable<PetCaracteristica> ObterPetCaracteristicas();
+        Task<ServicoPetCaracteristica> ObterServicoPetCaracteristica(Guid servicoId, Guid petPetCaracteristicaId);
 
         IQueryable<DiaSemana> ObterDiasSemana();
 

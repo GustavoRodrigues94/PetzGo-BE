@@ -15,6 +15,9 @@ namespace PetzGo.Agendamento.Infra.Contexto
             IMediatorManipulador mediatorManipulador) : base(opcoes) => _mediatorManipulador = mediatorManipulador;
 
         public DbSet<Agenda> Agenda { get; set; }
+        public DbSet<AgendaCliente> AgendaCliente { get; set; }
+        public DbSet<AgendaPet> AgendaPet { get; set; }
+        public DbSet<AgendaServico> AgendaServico { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
