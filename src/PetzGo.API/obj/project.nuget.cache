@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "5V6Gebb6A6wIjE6y6+T3utux9CYM/wMljLSiiOKMml58koauAsMO/FiT9/ELrHZUcZ0ggkDwK4z+RydOf3y1eA==",
-  "success": false,
+  "dgSpecHash": "uTziDeBKs4BhX5ZLZjwyTlDO4VsM9eZyUb+Kg3OEgdL6OrY0vA0yWif0+9R/LVxVeIqhhQNhbe/GOQPxJKSQcQ==",
+  "success": true,
   "projectFilePath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.API\\PetzGo.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gustavo\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
@@ -27,7 +27,7 @@
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.13\\microsoft.entityframeworkcore.analyzers.5.0.13.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.9\\microsoft.entityframeworkcore.design.5.0.9.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.13\\microsoft.entityframeworkcore.relational.5.0.13.nupkg.sha512",
-    "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.9\\microsoft.entityframeworkcore.sqlserver.5.0.9.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.13\\microsoft.entityframeworkcore.sqlserver.5.0.13.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
@@ -119,15 +119,5 @@
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.SqlServer from 5.0.13 to 5.0.9. Reference the package directly from the project to select a different version. \r\n PetzGo.API -> PetzGo.Agendamento.Infra -> Microsoft.EntityFrameworkCore.SqlServer (>= 5.0.13) \r\n PetzGo.API -> Microsoft.EntityFrameworkCore.SqlServer (>= 5.0.9)",
-      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

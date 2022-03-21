@@ -20,6 +20,8 @@ namespace PetzGo.Agendamento.Infra.Repositorios
 
         public void AdicionarAgendamento(Agenda agenda) => _contexto.Agenda.Add(agenda);
 
+        public void AtualizarAgendamento(Agenda agenda) => _contexto.Agenda.Update(agenda);
+
         public void Dispose() => _contexto?.Dispose();
     }
 }

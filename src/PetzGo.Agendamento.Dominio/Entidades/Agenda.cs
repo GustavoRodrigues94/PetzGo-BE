@@ -17,9 +17,16 @@ namespace PetzGo.Agendamento.Dominio.Entidades
                 return agenda;
             }
 
-            public static Agenda FinalizarAgendamentoIniciado(Agenda agendamentoIniciado, AgendaCliente agendaCliente, AgendaPet agendaPet, AgendaServico agendaServico)
+            public static Agenda FinalizarAgendamentoIniciado(Agenda agendamentoIniciado, 
+                string nomeCliente,
+                string nomePet, string tipoPet, string petCaracteristica,
+                string nomeServico, decimal valorServico, int tempoEmMinutoServico)
             {
-                agendamentoIniciado.FinalizarAgendamento(agendaCliente, agendaPet, agendaServico);
+                agendamentoIniciado.AdicionarCliente(nomeCliente);
+                agendamentoIniciado.AdicionarPet(nomePet, petCaracteristica, tipoPet);
+                agendamentoIniciado.AdicionarServico(nomeServico, valorServico, tempoEmMinutoServico);
+                agendamentoIniciado.FinalizarAgendamento();
+
                 return agendamentoIniciado;
             }
         }
@@ -41,7 +48,7 @@ namespace PetzGo.Agendamento.Dominio.Entidades
         public DateTime DataHoraInicio { get; private set; }
         public DateTime DataHoraTermino { get; private set; }
 
-        public void AdicionarServico(string nome, decimal valor, int tempoEmMinutos)
+        private void AdicionarServico(string nome, decimal valor, int tempoEmMinutos)
         {
             var agendaServico = new AgendaServico(Id, nome, valor, tempoEmMinutos);
             AgendaServico = agendaServico;
@@ -50,14 +57,14 @@ namespace PetzGo.Agendamento.Dominio.Entidades
             CalcularValorTotal();
         }
 
-        public void AdicionarPet(string nome, PetCaracteristicaEnum petCaracteristica, TipoPetEnum tipoPet)
+        private void AdicionarPet(string nome, string petCaracteristica, string tipoPet)
         {
             var agendaPet = new AgendaPet(Id, nome, petCaracteristica, tipoPet);
             AgendaPet = agendaPet;
             AgendaPetId = agendaPet.Id;
         }
 
-        public void AdicionarCliente(string nome)
+        private void AdicionarCliente(string nome)
         {
             var agendaCliente = new AgendaCliente(Id, nome);
             AgendaCliente = agendaCliente;
@@ -77,9 +84,9 @@ namespace PetzGo.Agendamento.Dominio.Entidades
         private static DateTime CalcularDataHoraTermino(DateTime dataHoraInicio, int tempoEmMinutos) =>
             dataHoraInicio.AddMinutes(tempoEmMinutos);
 
-        private void FinalizarAgendamento(AgendaCliente agendaCliente, AgendaPet agendaPet, AgendaServico agendaServico)
+        private void FinalizarAgendamento()
         {
-            throw new NotImplementedException();
+            AgendamentoStatus = AgendamentoStatusEnum.GravacaoCompleta;
         }
 
     }

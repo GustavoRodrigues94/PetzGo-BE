@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PetzGo.Agendamento.Infra.Contexto;
 using PetzGo.API.Middlewares;
 using PetzGo.Cadastros.Infra.Contexto;
 using PetzGo.ControleAcesso.Infra.Contexto;
@@ -32,6 +33,9 @@ namespace PetzGo.API
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDbContext<UsuarioContexto>(opt =>
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<AgendamentoContexto>(opt =>
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 

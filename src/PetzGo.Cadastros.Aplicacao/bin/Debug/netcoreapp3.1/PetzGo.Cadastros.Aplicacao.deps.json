@@ -12,7 +12,8 @@
           "Flunt.Br": "1.4.1",
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "PetzGo.Cadastros.Dominio": "1.0.0",
-          "PetzGo.Core": "1.0.0"
+          "PetzGo.Core": "1.0.0",
+          "MediatR": "9.0.0.0"
         },
         "runtime": {
           "PetzGo.Cadastros.Aplicacao.dll": {}

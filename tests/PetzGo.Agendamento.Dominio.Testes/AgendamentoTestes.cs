@@ -14,7 +14,7 @@ namespace PetzGo.Agendamento.Dominio.Testes
             var agendamento = Agenda.AgendaFactory.NovoAgendamentoIniciado(Guid.NewGuid(), DateTime.Now, 130);
 
             // Act
-            agendamento.AdicionarServico("Banho & Tosa", new decimal(20.45), 130);
+            //agendamento.AdicionarServico("Banho & Tosa", new decimal(20.45), 130);
 
             // Assert
             Assert.Equal(new decimal(20.45), agendamento.ValorTotal);

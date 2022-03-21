@@ -26,7 +26,7 @@ namespace PetzGo.Agendamento.Aplicacao.Manipuladores
                     comando.Notifications);
 
             var agenda = Agenda.AgendaFactory.NovoAgendamentoIniciado(comando.EmpresaId,
-                comando.DataHoraInicio, comando.TempoEmMinutos);
+                comando.DataInicio, comando.TempoEmMinutos);
 
             _agendaRepositorio.AdicionarAgendamento(agenda);
 
@@ -50,9 +50,9 @@ namespace PetzGo.Agendamento.Aplicacao.Manipuladores
                 return new ComandoResultado(false, "Agendamento não encontrado", null);
 
             var agendaParaFinalizar = Agenda.AgendaFactory.FinalizarAgendamentoIniciado(agendamento,
-                new AgendaCliente(agendamento.Id, comando.NomeCliente),
-                new AgendaPet(agendamento.Id, comando.NomePet, comando.TipoPetCaracteristica, comando.TipoPet),
-                new AgendaServico(agendamento.Id, comando.NomeServico, comando.ValorServico, comando.TempoEmMinutosServico));
+                comando.NomeCliente,
+                comando.NomePet, comando.TipoPet, comando.TipoPetCaracteristica,
+                comando.NomeServico, comando.ValorServico, comando.TempoEmMinutosServico);
 
             _agendaRepositorio.AtualizarAgendamento(agendaParaFinalizar);
 
