@@ -14,3 +14,17 @@ C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\
 C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.pdb
 C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.dll
 C:\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.deps.json
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Core.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Cadastros.Dominio.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Core.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.csprojAssemblyReference.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.AssemblyInfoInputs.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.AssemblyInfo.cs
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.csproj.CoreCompileInputs.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.csproj.CopyComplete
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Cadastros.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.Cadastros.Aplicacao.pdb

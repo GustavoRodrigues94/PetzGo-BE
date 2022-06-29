@@ -46,6 +46,27 @@
           "lib/netstandard2.0/IdentityServer4.Storage.dll": {}
         }
       },
+      "MediatR/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -1522,6 +1543,9 @@
       "PetzGo.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MediatR": "10.0.1"
+        },
         "compile": {
           "bin/placeholder/PetzGo.Core.dll": {}
         },
@@ -1581,6 +1605,36 @@
         "lib/netstandard2.0/IdentityServer4.Storage.dll",
         "lib/netstandard2.0/IdentityServer4.Storage.pdb",
         "lib/netstandard2.0/IdentityServer4.Storage.xml"
+      ]
+    },
+    "MediatR/10.0.1": {
+      "sha512": "vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
+      "type": "package",
+      "path": "mediatr/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.10.0.1.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/1.0.1": {
+      "sha512": "NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "type": "package",
+      "path": "mediatr.contracts/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.Contracts.dll",
+        "lib/net461/MediatR.Contracts.xml",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.1.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
@@ -5667,11 +5721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Infra\\PetzGo.ControleAcesso.Infra.csproj",
+      "projectUniqueName": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Infra\\PetzGo.ControleAcesso.Infra.csproj",
       "projectName": "PetzGo.ControleAcesso.Infra",
-      "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Infra\\PetzGo.ControleAcesso.Infra.csproj",
+      "projectPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Infra\\PetzGo.ControleAcesso.Infra.csproj",
       "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-      "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Infra\\obj\\",
+      "outputPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5691,8 +5745,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Dominio\\PetzGo.ControleAcesso.Dominio.csproj": {
-              "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Dominio\\PetzGo.ControleAcesso.Dominio.csproj"
+            "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Dominio\\PetzGo.ControleAcesso.Dominio.csproj": {
+              "projectPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.ControleAcesso.Dominio\\PetzGo.ControleAcesso.Dominio.csproj"
             }
           }
         }

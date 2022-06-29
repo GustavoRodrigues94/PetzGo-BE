@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj": {}
+    "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj": {}
   },
   "projects": {
-    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj": {
+    "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj",
+        "projectUniqueName": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj",
         "projectName": "PetzGo.Cadastros.Dominio",
-        "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj",
+        "projectPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\obj\\",
+        "outputPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
-                "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj"
+              "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
+                "projectPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj": {
+    "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj",
+        "projectUniqueName": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj",
         "projectName": "PetzGo.Cadastros.Infra",
-        "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj",
+        "projectPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\obj\\",
+        "outputPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -92,8 +92,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj": {
-                "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj"
+              "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj": {
+                "projectPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj"
               }
             }
           }
@@ -146,14 +146,14 @@
         }
       }
     },
-    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
+    "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
+        "projectUniqueName": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
         "projectName": "PetzGo.Core",
-        "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
+        "projectPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\obj\\",
+        "outputPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -184,6 +184,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

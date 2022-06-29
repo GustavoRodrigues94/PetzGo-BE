@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "h/1zHTFc4QzngFCYj2LCTQfZDmBP/Kl6tqX+5uwCTBtGJKMJd9ckxJ4pgNAQcSFUw8d7yDxADQITK8h6ZCJk6Q==",
+  "dgSpecHash": "/RfzjpBwu9J07ZmaCOwA0Mu95Fd3DZwCQQXE6LDVWaJ8GGFwhDJhJ0Z/BJaheH1kOz3KwkpKG6hpcn3xn63Fcg==",
   "success": true,
-  "projectFilePath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Dominio\\PetzGo.Cadastros.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

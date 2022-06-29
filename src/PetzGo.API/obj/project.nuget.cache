@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uTziDeBKs4BhX5ZLZjwyTlDO4VsM9eZyUb+Kg3OEgdL6OrY0vA0yWif0+9R/LVxVeIqhhQNhbe/GOQPxJKSQcQ==",
+  "dgSpecHash": "CLRd3irDrAicu1NEFPF2/OWHmj5u2VIGwaTcTcuauAC3YRydm2VA6MdR1CJEzYhmvMdNZgpuj0WChascGBYrkw==",
   "success": true,
-  "projectFilePath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.API\\PetzGo.API.csproj",
+  "projectFilePath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.API\\PetzGo.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gustavo\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\flunt.br\\1.4.1\\flunt.br.1.4.1.nupkg.sha512",
@@ -10,7 +10,8 @@
     "C:\\Users\\Gustavo\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\identityserver4\\4.1.2\\identityserver4.4.1.2.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\identityserver4.storage\\4.1.2\\identityserver4.storage.4.1.2.nupkg.sha512",
-    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.9\\microsoft.aspnetcore.authentication.jwtbearer.5.0.9.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.0\\microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512",

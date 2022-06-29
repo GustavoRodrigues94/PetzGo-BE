@@ -14,3 +14,17 @@ C:\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1
 C:\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\MediatR.dll
 C:\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\PetzGo.Core.pdb
 C:\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\MediatR.xml
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.deps.json
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Dominio.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\PetzGo.Core.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Dominio.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\bin\Debug\netcoreapp3.1\PetzGo.Core.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.csprojAssemblyReference.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.AssemblyInfoInputs.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.AssemblyInfo.cs
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.csproj.CoreCompileInputs.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.csproj.CopyComplete
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Infra\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Infra.pdb

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "iEoChwDgi7rizEw4HwCxvnklT6L42+V78RbxPzzAMlKYVNRUkJD9gl1SuHqH06T609FPKSEzL0oxMLVG05KWiA==",
+  "dgSpecHash": "mgbFDVWmP5BxwjiYLFDJDw8x+4Rjk8iXDEHS30oRKQJqi4zAFUBFW70BvB45+6AMGVMQx2yqYRgCwpx2ap9SFQ==",
   "success": true,
-  "projectFilePath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Aplicacao\\PetzGo.Cadastros.Aplicacao.csproj",
+  "projectFilePath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Aplicacao\\PetzGo.Cadastros.Aplicacao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gustavo\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\flunt.br\\1.4.1\\flunt.br.1.4.1.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.9\\microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.9\\microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.9\\microsoft.entityframeworkcore.analyzers.5.0.9.nupkg.sha512",

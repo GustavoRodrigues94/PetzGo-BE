@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4IHQrx16zwp1bLVqsHMMVTt8OqTSRnHer1ZWl0qJvOocFeDFDDm94j8BcyP7o3UrixyEw7ZX8/u8msJ7WxxE3g==",
+  "dgSpecHash": "kLxpiWkZD0LKS/XDwKR86pN2WQ/PUpufgrSWAlqjpd4Ej2NwE3lGsIOQNT9uTttX8rXimERobGnvYZk83yW2Cw==",
   "success": true,
-  "projectFilePath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj",
+  "projectFilePath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Cadastros.Infra\\PetzGo.Cadastros.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gustavo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

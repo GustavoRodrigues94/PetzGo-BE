@@ -10,3 +10,12 @@ C:\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.csp
 C:\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.csproj.CopyComplete
 C:\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.dll
 C:\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\bin\Debug\netcoreapp3.1\PetzGo.Core.deps.json
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\bin\Debug\netcoreapp3.1\PetzGo.Core.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\bin\Debug\netcoreapp3.1\PetzGo.Core.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.csprojAssemblyReference.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.AssemblyInfoInputs.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.AssemblyInfo.cs
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.csproj.CoreCompileInputs.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.Core\obj\Debug\netcoreapp3.1\PetzGo.Core.pdb

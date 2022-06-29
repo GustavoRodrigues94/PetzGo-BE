@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "O8FCoNOPfvRn8M2FwBv8pwFwE8xC+c0nf+0jGUU9AvE2dLIvs6dTLm8uqTvRJbe5ojNWd6TUuAYvk//Dnp0OHQ==",
+  "dgSpecHash": "FiORbnBMFJdQIAQO7/8Xz67BFVmP+1XM3ASY0KuVvjoHr8DgBS2TL5i7lDl4Z9kGj2LJI8IbyWLZL6wjszhp6A==",
   "success": true,
-  "projectFilePath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

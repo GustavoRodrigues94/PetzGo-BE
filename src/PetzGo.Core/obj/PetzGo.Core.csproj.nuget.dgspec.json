@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {}
+    "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {}
   },
   "projects": {
-    "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
+    "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
+        "projectUniqueName": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
         "projectName": "PetzGo.Core",
-        "projectPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
+        "projectPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\PetzGo.Core.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\obj\\",
+        "outputPath": "D:\\Projetos\\PetzGo\\backend\\PetzGo\\src\\PetzGo.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

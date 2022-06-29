@@ -14,3 +14,17 @@ C:\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreap
 C:\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Core.pdb
 C:\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\MediatR.xml
 C:\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.csproj.CopyComplete
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.deps.json
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Dominio.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Core.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Dominio.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\bin\Debug\netcoreapp3.1\PetzGo.Core.pdb
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.csprojAssemblyReference.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.AssemblyInfoInputs.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.AssemblyInfo.cs
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.csproj.CoreCompileInputs.cache
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.csproj.CopyComplete
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.dll
+D:\Projetos\PetzGo\backend\PetzGo\src\PetzGo.ControleAcesso.Aplicacao\obj\Debug\netcoreapp3.1\PetzGo.ControleAcesso.Aplicacao.pdb
